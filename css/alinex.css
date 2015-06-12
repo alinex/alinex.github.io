@@ -1,0 +1,19 @@
+@import url(../fonts/sansation/stylesheet.css);
+
+body {
+  background: #151515 url("../images/bkg.png") 0 0;
+  color: #ddd;
+}
+
+h1, .btn {
+  font-family: 'SansationBold';
+}
+.btn {
+  font-size: 20px;
+  font-weight: boldest;
+  color: #000;
+}
+p {
+  font-family: 'SansationRegular';
+  font-size: 14pt;
+}
