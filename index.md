@@ -3,7 +3,7 @@ title: Alinex Universe
 layout: title
 ---
 
-<div class="text-center"><img src="images/Alinex-black-600.png" /></div>
+<div class="text-center"><img src="images/Alinex-black-600.png" width="100%" /></div>
 
 <p><br /><br /></p>
 
@@ -19,11 +19,14 @@ some of my latest node modules with you.
 
 <div class="row">
   <div class="col-md-6">
-    <button type="button" class="btn btn-primary btn-block"
-    onclick="location.href='blog.html'">BLOG</button>
+    <form action="blog.html">
+    <button type="submit" class="btn btn-primary btn-block">BLOG</button>
+    </form>
   </div>
   <div class="col-md-6">
     <button type="button" class="btn btn-warning btn-block"
     onclick="location.href='modules.html'">Modules</button>
   </div>
 </div>
+
+<p><br /><br /></p>
