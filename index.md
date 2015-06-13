@@ -20,12 +20,13 @@ some of my latest node modules with you.
 <div class="row">
   <div class="col-md-6">
     <form action="blog.html">
-    <button type="submit" class="btn btn-primary btn-block">BLOG</button>
+      <button type="submit" class="btn btn-primary btn-block">BLOG</button>
     </form>
   </div>
   <div class="col-md-6">
-    <button type="button" class="btn btn-warning btn-block"
-    onclick="location.href='modules.html'">Modules</button>
+    <form action="modules.html">
+      <button type="submit" class="btn btn-warning btn-block">Modules</button>
+    </form>
   </div>
 </div>
 

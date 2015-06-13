@@ -3,9 +3,10 @@
 body {
   background: #151515 url("../images/bkg.png") 0 0;
   color: #ddd;
+  padding-top: 60px;
 }
 
-h1, .btn {
+h1, h2, h3, h4, h5, .btn {
   font-family: 'SansationBold';
 }
 .btn {
@@ -13,7 +14,15 @@ h1, .btn {
   font-weight: boldest;
   color: #000;
 }
-p {
+h3 {
+  color: #f0ad4e;
+}
+p, ul {
   font-family: 'SansationRegular';
-  font-size: 14pt;
+  font-size: 12pt;
+  line-height: 120%;
+}
+
+a:hover {
+  color: #f0ad4e;
 }

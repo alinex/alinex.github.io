@@ -3,8 +3,6 @@ title: BLOG
 layout: default
 ---
 
-# {{ page.title }}
-
 {% for post in site.posts limit: 5 %}
 <div class="row-fluid">
   <div class="span12">
