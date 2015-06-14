@@ -3,7 +3,7 @@ title: Alinex Universe
 layout: title
 ---
 
-<div class="text-center"><img src="images/Alinex-black-600.png" width="100%" /></div>
+<div><img src="images/Alinex-black-600.png" class="img-responsive center-block" /></div>
 
 <p><br /><br /></p>
 

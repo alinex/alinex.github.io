@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, .btn {
   font-weight: boldest;
   color: #000;
 }
-h3 {
+h1, h2, h3 {
   color: #f0ad4e;
 }
 p, ul {
@@ -25,4 +25,8 @@ p, ul {
 
 a:hover {
   color: #f0ad4e;
+}
+
+.navbar-inner {
+  background: #000
 }
