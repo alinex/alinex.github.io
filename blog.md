@@ -8,7 +8,7 @@ layout: default
   <div class="span12">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <h4>{{ post.date | date_to_long_string }}</h4>
-    {{ post.content | truncatewords: 60 }}
+    {{ post.excerpt }}
       <p><a href="{{ post.url }}">Read the whole Post</a>
     </p>
   </div>

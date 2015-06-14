@@ -42,35 +42,37 @@ you don't have such you make create it first.
 To test my Jekyll site locally before pushing it I wanted a local installation.
 So I first installed it locally and started therefore with the ruby installation:
 
-``` bash
+{% highlight bash %}
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 curl -L https://get.rvm.io | bash -s stable --ruby
-```
+source /home/alex/.rvm/scripts/rvm
+{% endhighlight %}
 
 I had to install it this way because the package manager contains a too old version
 1.9 which won't work.
 
 I added the `Gemfile` with the following content to my repository:
 
-``` text
+{% highlight text %}
 source 'https://rubygems.org'
 gem 'github-pages'
-```
+{% endhighlight %}
 
 Now I installed Jekyll through the bundler:
 
-``` bash
+{% highlight bash %}
 gem install bundler
 bundle install
-```
+{% endhighlight %}
 
 ## Start local Jekyll
 
 The following call within the repository will start the Jekyll server:
 
-``` bash
+{% highlight bash %}
+source /home/alex/.rvm/scripts/rvm
 bundle exec jekyll serve
-```
+{% endhighlight %}
 
 It will also continually detect file changes and recreates the pages so you can
 change the files and directly view the changes.
