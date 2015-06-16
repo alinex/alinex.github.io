@@ -1,4 +1,5 @@
 @import url(../fonts/sansation/stylesheet.css);
+@import url(../fonts/xcelsion/style.css);
 
 body {
   background: #151515 url("../images/bkg.png") 0 0;
@@ -13,6 +14,11 @@ h1, h2, h3, h4, h5, .btn {
 }
 .btn {
   font-size: 20px;
+  font-weight: boldest;
+  color: #000;
+}
+.navbar .btn {
+  font-size: 12px;
   font-weight: boldest;
   color: #000;
 }
@@ -31,4 +37,18 @@ a:hover {
 
 .navbar-inner {
   background: #000
+}
+
+a[href^="http://alinex.github.io/node-"], .alinex {
+  font-family: 'Xcelsion';
+}
+
+.modulees a[href^="http://alinex.github.io/node-"] {
+  font-size: 200%;
+  float: left;
+  padding-top: 8px;
+  padding-right: 8px;
+}
+.modulses p {
+  padding-top: 8px;
 }
