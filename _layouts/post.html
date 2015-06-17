@@ -1,15 +1,15 @@
 {% include header.html %}
 
 <div class="row-fluid">
-  <div class="col-sm-4 col-md-3">
-    {% include posts.html %}
-  </div>
-  <div class="col-xs-12 col-sm-8 col-md-6" style="z-index:3; padding-bottom:30px">
+  <div class="col-xs-12 col-sm-8 col-md-6" style="z-index:3; padding-bottom:50px">
 
     <h1>{{ page.title }}</h1>
     <h4>{{ page.date | date_to_long_string }}</h4>
     {{ content }}
 
+  </div>
+  <div class="col-sm-4 col-md-3 pull-left">
+    {% include posts.html %}
   </div>
   <div class="col-md-3" id="sidebar">
     {% include about.html %}
