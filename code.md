@@ -9,7 +9,7 @@ This modules are written in CoffeeScript but are already compiled to JavaScript
 in the NPM download package. So no need to worry if you aren't familiar with
 CoffeeScript.
 
-To get more information about the code style and development guidelines see
+To get more information about the code, style and development guidelines see
 the [General docs](http://alinex.github.io/node-alinex/).
 
 <div class="row modules">
@@ -36,7 +36,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
 <p><a href="http://alinex.github.io/node-spawn/">spawn</a>
     validation and sanitize of simple or complex values</p>
 <p><a href="http://alinex.github.io/node-fs/">fs</a>
-    enhancesment of the node filesystem library</p>
+    enhancement of the node filesystem library</p>
 <p><a href="http://alinex.github.io/node-mysql/">mysql</a>
     mysql wrapper module</p>
 <p><a href="http://alinex.github.io/node-server/">server</a>
@@ -54,7 +54,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
 </div>
 
 Some more modules are planned or in development but didn't reach a stable
-and presentable stage. I will add them as sosn as they are ready to use.
+and presentable stage. I will add them as soon as they are ready to use.
 
 <!--
 
@@ -68,3 +68,11 @@ and presentable stage. I will add them as sosn as they are ready to use.
 </ul>
 
 -->
+
+### PHP Server
+
+The [PHP Server](http://alinex.de/server/html/index.html) is a collection of
+modules to make an universal client/server system for individual web applications
+but the development is stopped.
+
+A lot of the ideas are developed further on in the Node section.

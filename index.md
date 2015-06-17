@@ -21,14 +21,14 @@ some of my latest node modules with you.
   <div class="col-md-6">
     <form action="blog.html">
       <button type="submit" class="btn btn-primary btn-block">
-        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> BLOG
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Blog
       </button>
     </form>
   </div>
   <div class="col-md-6">
-    <form action="modules.html">
+    <form action="code.html">
       <button type="submit" class="btn btn-warning btn-block">
-        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Modules
+        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Code
       </button>
     </form>
   </div>

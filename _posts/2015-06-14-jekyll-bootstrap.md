@@ -95,3 +95,8 @@ optimizing.
 After a short test weekend I got solution looking good and functional. I will
 continue to use it and I can also say that it is a good solution for the programmer
 and makes maintaining the developer's site as easy as maintaining the code.
+
+Sorry for the very abstractive and short explanation, but more detailed ones will
+follow in the future.
+
+<p class="text-right"><i>Alex</i></p>
