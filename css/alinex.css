@@ -17,11 +17,17 @@ h1, h2, h3, h4, h5, .btn {
   font-weight: boldest;
   color: #000;
 }
+
+.navbar-inner {
+  background: #000
+}
 .navbar .btn {
   font-size: 12px;
   font-weight: boldest;
   color: #000;
+  padding: 3px 10px 1px 6px;
 }
+
 h1, h2, h3 {
   color: #f0ad4e;
 }
@@ -35,9 +41,6 @@ a:hover {
   color: #f0ad4e;
 }
 
-.navbar-inner {
-  background: #000
-}
 
 a[href^="http://alinex.github.io/node-"], .alinex {
   font-family: 'Xcelsion';
