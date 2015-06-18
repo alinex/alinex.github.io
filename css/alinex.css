@@ -61,3 +61,9 @@ a[href^="http://alinex.github.io/node-"], .alinex {
 .modulses p {
   padding-top: 8px;
 }
+
+.imprint {
+  margin-top: 40px;
+  color: #666;
+  border-top: 1px solid #666;
+}
