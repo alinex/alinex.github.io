@@ -48,7 +48,9 @@ a:hover {
 }
 
 
-a[href^="http://alinex.github.io/node-"], .alinex {
+a[href^="http://alinex.github.io/node-"],
+a[href^="https://alinex.github.io/node-"],
+.alinex {
   font-family: 'Xcelsion';
 }
 
