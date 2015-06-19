@@ -1,6 +1,6 @@
 ---
 title: BLOG
-layout: default
+layout: post_index
 ---
 
 {% for post in site.posts limit: 5 %}
@@ -14,3 +14,4 @@ layout: default
   </div>
 </div>
 {% endfor %}
+

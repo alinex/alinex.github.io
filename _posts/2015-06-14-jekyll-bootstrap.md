@@ -1,6 +1,7 @@
 ---
 title: Jekyll & Bootstrap on Github
 layout: post
+tags: Jekyll Bootstrap Github
 ---
 
 I red about the Jekyll support on github and had to try it mysqlf. I already

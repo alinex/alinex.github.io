@@ -23,7 +23,7 @@ next projects.
 Alinex should be a collection of stable, flexible and strong integrated components
 to make a base system for any powerful application. Web applications are used more
 and more also with the new term 'software as a service' and the big market share of
-tablet computers and smartphones.
+tablet computers and smart phones.
 
 To reach this there are already a lot of frameworks which help in development,
 but often they are very complex and not flexible enough. The hardest part in web
@@ -37,28 +37,52 @@ multiple modules which can be combined and may do everything if used together.
 
 #### Development
 
-ease, helper, automated
+First of all it should be a base for creating applications so it is my first
+priority to make something which is __easy to use for the developer__ and gives
+them optimal support. This should be reached through as __much automation__ as
+possible. As a developer I want to think on the coding not on the surroundings
+but want to be informed of anything I forgot by __automated analysis and testing__.
 
 #### Coding Guidelines
 
-style, coffee
+Next I will follow concrete coding guidelines to not only __have a consistent
+design__ using the same style of method construction and over all of my own
+modules. Also important __variables are standardized__ and has to use
+__speaking names__ to allow for easy reading. The guideline itself should not be
+a special of mine but the basics which most developers use.
 
-#### Testing
+#### Testing/Quality
 
-unit, function test, ci
+While and after coding the __testing of functionality__ is one of the key concept
+for quality. It is my goal to have a __nearly complete test coverage__ over my
+code and also write the tests while coding. This also allows to use __contineous
+integration__ to check the code on different system setups.
+
+### Packaging/Versioning
+
+The delivery of the software will be done in packages which are __easy to install
+and maintain__ but only after a full success of tests. Packages are already
+__precompiled/minified for use__ and are available through repositories.
+
+To help in maintaining the software as application or as module I will use
+__semantic versioning__ and will not change backward compatibility in a hotfix
+release.
 
 #### Documentation
 
-readme, code, api
-
-#### Quality
-
-test coverage,
+The documentation should be easy to write (if not i won't write it) so I will
+__write it with the code__ and automatically extract it to be __viewed in the
+browser__. This includes Readme, API and Man pages.
 
 #### Quantity
 
-parallel, async, overload protection
+I want to have quantity in form of __speed in productive use__ and also in
+__speed of making changes__. The first one will be reached by making everything
+asynchronous, non-blocking and also doing everything in parallel as far as possible.
+The maintainability is given by modularization and using __clean interfaces__.
 
 #### Security
 
-error handling, data validation
+And at last but not least the security of the created applications have to be
+given. Therefore I will sanitize all external data through a strong validator
+which prevents inputing wrong data formats.
