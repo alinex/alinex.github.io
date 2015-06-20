@@ -1,23 +1,25 @@
-<h1>&nbsp;</h1>
+<div class="posts">
 
-<h4>Last Posts</h4>
+  <h4>Last Posts</h4>
 
-{% for post in site.posts limit: 20 %}
-<p><a href="{{ post.url }}">{{ post.title }}</a></p>
-{% endfor %}
-
-
-
-{% capture tags %}
-  {% for tag in site.tags %}
-    {{ tag[0] }}
+  {% for post in site.posts limit: 5 %}
+  <p><a href="{{ post.url }}">{{ post.title }}</a></p>
   {% endfor %}
-{% endcapture %}
-{% assign sortedtags = tags | split:' ' | sort %}
 
-{% for tag in sortedtags %}
-  <h4 id="{{ tag }}">{{ tag }}</h4>
-  {% for post in site.tags[tag] %}
-    <P><a href="{{ post.url }}">{{ post.title }}</a></P>
+
+
+  {% capture tags %}
+    {% for tag in site.tags %}
+      {{ tag[0] }}
+    {% endfor %}
+  {% endcapture %}
+  {% assign sortedtags = tags | split:' ' | sort %}
+
+  {% for tag in sortedtags %}
+    <h4 id="{{ tag }}">{{ tag }}</h4>
+    {% for post in site.tags[tag] %}
+      <P><a href="{{ post.url }}">{{ post.title }}</a></P>
+    {% endfor %}
   {% endfor %}
-{% endfor %}
+
+</div>

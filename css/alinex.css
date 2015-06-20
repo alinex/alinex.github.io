@@ -69,3 +69,13 @@ a[href^="https://alinex.github.io/node-"],
   color: #666;
   border-top: 1px solid #666;
 }
+
+.posts {
+  margin-top: 64px;
+}
+.posts h4 {
+  color: #666;
+}
+.posts p {
+  margin-bottom: 0;
+}
