@@ -8,7 +8,14 @@
     <h4>{{ page.date | date_to_long_string }}</h4>
     {{ content }}
 
-    {% comment %}
+    <script>
+    var idcomments_acct = '97a0ec4c017ab32719c1ea95cbf67a5f';
+    var idcomments_post_id;
+    var idcomments_post_url;
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none"></span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+
   </div>
   <div class="hidden-xs col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-6 hidden-print">
     {% include posts.html %}
