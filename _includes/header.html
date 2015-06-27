@@ -13,7 +13,6 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -30,7 +29,11 @@
               </a>
               <img src="/images/Alinex-200.png" style="display:none" alt="preloading" />
             </div>
-            <div class="col-xs-6 col-sm-8 col-md-9" style="text-align:right">
+            <div class="hidden-xs col-sm-4 col-md-4" style="text-align:right" id="search-container">
+              <input type="text" id="search-input" placeholder="search...">
+            </div>
+            <!-- Script pointing to jekyll-search.js -->
+            <div class="col-xs-6 col-sm-4 col-md-5" style="text-align:right">
               <a href="/blog.html" class="btn btn-primary">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Blog
               </a>
@@ -43,4 +46,6 @@
       </div>
     </nav>
 
-<div css="container-fluid clearfix">
+<div class="container-fluid clearfix">
+
+  <ul id="results-container"></ul>
