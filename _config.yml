@@ -1,4 +1,12 @@
 highlighter: pygments
+markdown: redcarpet
 timezone: Europe/Berlin
 
 title: Alinex
+
+
+comments :
+  provider : intensedebate
+  intensedebate :
+    account : alinex_de
+
