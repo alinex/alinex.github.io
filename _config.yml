@@ -5,4 +5,4 @@ timezone: Europe/Berlin
 title: Alinex
 
 paginate:    3
-paginate_path: "page:num"
+paginate_path: "blog/page:num"

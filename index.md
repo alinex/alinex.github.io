@@ -19,7 +19,7 @@ some of my latest node modules with you.
 
 <div class="row">
   <div class="col-md-6">
-    <form action="blog.html">
+    <form action="blog">
       <button type="submit" class="btn btn-primary btn-block">
         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Blog
       </button>

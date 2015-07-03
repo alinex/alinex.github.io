@@ -1,5 +1,7 @@
 <div class="posts">
 
+  <h4>Show Posts by Tag</h4>
+
   <!-- collect tags -->
   {% capture tags %}
     {% for tag in site.tags %}
@@ -15,21 +17,21 @@
   }
   </script>
 
-  <h4>Show Links by Tag</h4>
-
   <p>
     {% for tag in sortedtags %}
-      <a href="#" onclick="switchTag('{{ tag }}')">{{ tag }}</a>
+      <a onclick="switchTag('{{ tag }}')">{{ tag }}</a>
     {% endfor %}
   </p>
 
   {% for tag in sortedtags %}
     <div id="tag4{{ tag }}" style="display:none">
-    <h4 onclick="switchTag('{{ tag }}')">Posts for {{ tag }}</h4>
+    <h4 onclick="switchTag('{{ tag }}')">Posts about: {{ tag }}</h4>
     {% for post in site.tags[tag] %}
       <p><a href="{{ post.url }}">{{ post.title }}</a></p>
     {% endfor %}
     </div>
   {% endfor %}
+
+  <p><br /><br /><br /></p>
 
 </div>
