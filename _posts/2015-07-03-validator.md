@@ -86,7 +86,7 @@ validator.check
   # this will validate without error
 ```
 
-__hanlebars:__
+__handlebars:__
 
 This easy type will check the text which may contain [handlebars](http://handlebarsjs.com/)
 syntax and make a function out of it. This contains the compiled handlebars template
@@ -110,7 +110,7 @@ More Information
 ------------------------------------------------------------------
 
 See all the individual changes in the
-[Changelog](http://alinex.github.io/node-validator/Changelog.md.html).
+[Changelog](/node-validator/Changelog.md.html).
 And how to use it in the Manual for [Validator](https://alinex.github.io/node-validator).
 
 > But the main use will be in the [Config](https://alinex.github.io/node-config)
