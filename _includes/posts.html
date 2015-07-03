@@ -6,6 +6,8 @@
   <p><a href="{{ post.url }}">{{ post.title }}</a></p>
   {% endfor %}
 
+  <p><br /></p>
+
   <!-- collect tags -->
   {% capture tags %}
     {% for tag in site.tags %}
@@ -21,7 +23,7 @@
   }
   </script>
 
-  <h4>Posts by Tag</h4>
+  <h4>Show Links by Tag</h4>
 
   <p>
     {% for tag in sortedtags %}
