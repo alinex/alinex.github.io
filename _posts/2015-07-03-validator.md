@@ -10,7 +10,7 @@ to make the references more powerful.
 
 > It's a bit late but better as neither ;-)
 
-The major changes are:
+The major changes in Version 1.0.0 are:
 
 - made it completely asynchronous
 - use powerful reference definitions
