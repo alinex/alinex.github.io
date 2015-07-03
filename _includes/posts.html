@@ -1,43 +1,9 @@
 <div class="posts">
 
-  <h4>Last Posts</h4>
+  <h4>Last 5 Posts</h4>
 
   {% for post in site.posts limit: 5 %}
   <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-  {% endfor %}
-
-  <p><br /></p>
-
-  <!-- collect tags -->
-  {% capture tags %}
-    {% for tag in site.tags %}
-      {{ tag[0] }}
-    {% endfor %}
-  {% endcapture %}
-  {% assign sortedtags = tags | split:' ' | sort %}
-
-  <script>
-  switchTag = function (tag) {
-    val = document.getElementById('tag4'+tag).style.display == 'block' ? 'none' : 'block';
-    document.getElementById('tag4'+tag).style.display = val;
-  }
-  </script>
-
-  <h4>Show Links by Tag</h4>
-
-  <p>
-    {% for tag in sortedtags %}
-      <a href="#" onclick="switchTag('{{ tag }}')">{{ tag }}</a>
-    {% endfor %}
-  </p>
-
-  {% for tag in sortedtags %}
-    <div id="tag4{{ tag }}" style="display:none">
-    <h4 onclick="switchTag('{{ tag }}')">Posts for {{ tag }}</h4>
-    {% for post in site.tags[tag] %}
-      <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-    {% endfor %}
-    </div>
   {% endfor %}
 
 </div>
