@@ -110,6 +110,7 @@ TO generate a blog in which I will put some posts each week I generated the foll
 `blog/index.html`:
 
 ``` mustache
+{{#.}}
 ---
 title: BLOG
 layout: post_index
@@ -163,6 +164,7 @@ layout: post_index
   </div>
 </div>
 {% endif %}
+{{#.}}
 ```
 
 The first block prints one page of posts and the second (more complex) block
