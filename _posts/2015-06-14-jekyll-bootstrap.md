@@ -75,6 +75,9 @@ source /home/alex/.rvm/scripts/rvm
 bundle exec jekyll serve
 {% endhighlight %}
 
+And with the additional flag `--drafts` the posts of the _drafts folder are shown
+as if they are already released.
+
 It will also continually detect file changes and recreates the pages so you can
 change the files and directly view the changes.
 
@@ -83,6 +86,135 @@ change the files and directly view the changes.
 Like working with git code you add your files, commit the changes and push it to
 master - that's all.
 
+## Optimize Jekyll
+
+Within the optimization I did the following and edited the `_config.yml`:
+
+``` yaml
+highlighter: pygments
+markdown: redcarpet
+timezone: Europe/Berlin
+
+title: Alinex
+
+paginate:    5
+paginate_path: "blog/page:num"
+```
+
+That will enable code highlighting for code marked with triple backticks like done
+on markdown. And enable the pagination to be used on the blog index.
+
+### Blog Index
+
+TO generate a blog in which I will put some posts each week I generated the following
+`blog/index.html`:
+
+``` mustache
+---
+title: BLOG
+layout: post_index
+---
+
+{% for post in paginator.posts %}
+<div class="row-fluid">
+  <div class="span12">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h4>{{ post.date | date_to_long_string }}</h4>
+    {{ post.excerpt }}
+      <p><a href="{{ post.url }}">Read the whole Post</a>
+    </p>
+  </div>
+</div>
+{% endfor %}
+
+
+{% if paginator.total_pages != 1 %}
+<div class="row-fluid text-center text-caps">
+  <div class="span12">
+  <hr />
+  <nav class="pagination" role="pagination">
+
+<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+{% if site.paginate_path != 'page:num'%}
+{% assign paginate_url = site.paginate_path | remove:'/page:num' %}
+{% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+  <a class="newer-posts" href="{{ site.url }}/{{ paginate_url }}/" class="btn" title="Newer Posts">&larr; Newer Posts</a> &nbsp; &nbsp;
+  {% else %}
+ <a class="newer-posts" href="{{ site.url }}/{{ paginate_url }}/page{{ paginator.previous_page }}/" class="btn" title="Newer Posts">&larr; Newer Posts</a>
+  {% endif %}
+{% endif %}
+{% if paginator.next_page %}
+&nbsp; &nbsp; <a class="older-posts" href="{{ site.url }}/{{ paginate_url }}/page{{ paginator.next_page }}/" class="btn" title="Older Posts">Older Posts &rarr;</a>
+{% endif %}
+{% else %}
+{% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+  <a class="newer-posts" href="{{ site.url }}/" class="btn" title="Newer Posts">&larr; Newer Posts</a> &nbsp; &nbsp;
+  {% else %}
+ <a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}/" class="btn" title="Newer Posts">&larr; Newer Posts</a>
+  {% endif %}
+{% endif %}
+{% if paginator.next_page %}
+&nbsp; &nbsp; <a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/" class="btn" title="Older Posts">Older Posts &rarr;</a>
+            </nav>
+{% endif %}
+{% endif %}
+  </div>
+</div>
+{% endif %}
+```
+
+The first block prints one page of posts and the second (more complex) block
+will create links to page through all of the posts.
+
+### Tags
+
+And as I will add tags to each post I will create a lookup per tag on the sidebar
+which is realized with the following `_includes/tags.html`:
+
+``` mustache
+<div class="posts">
+  <h4>Show Posts by Tag</h4>
+
+  <!-- collect tags -->
+  {% capture tags %}
+    {% for tag in site.tags %}
+      {{ tag[0] }}
+    {% endfor %}
+  {% endcapture %}
+  {% assign sortedtags = tags | split:' ' | sort %}
+
+  <script>
+  switchTag = function (tag) {
+    val = document.getElementById('tag4'+tag).style.display == 'block' ? 'none' : 'block';
+    document.getElementById('tag4'+tag).style.display = val;
+  }
+  </script>
+
+  <p>
+    {% for tag in sortedtags %}
+      <a onclick="switchTag('{{ tag }}')">{{ tag }}</a>
+    {% endfor %}
+  </p>
+
+  {% for tag in sortedtags %}
+    <div id="tag4{{ tag }}" style="display:none">
+    <h4 onclick="switchTag('{{ tag }}')">Posts about: {{ tag }}</h4>
+    {% for post in site.tags[tag] %}
+      <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+    {% endfor %}
+    </div>
+  {% endfor %}
+
+  <p><br /><br /><br /></p>
+
+</div>
+```
+
+THis will collect all tags out of the posts add a function for show/hide the
+links per tag and list the tag links in separate blocks.
+
 ## Bootstrap
 
 To get a modern design with less effort which will also have a mobile representation
@@ -90,6 +222,15 @@ I choose bootstrap with it's sow/column design to do the work.
 
 I am new to bootstrap but had the layout ready after 2 hours of testing and
 optimizing.
+
+After some more tests I got ít even better and could bring my layout to be
+display size independent as responsive site. Some areas will show one under each
+other on small displays while others will be hidden.
+
+Also an optimized print-layout is given by hiding all navigation blocks.
+
+And finally I got the correct colors and style with a simple and small css file
+which mostly set fonts, colors and tweak spaces a little.
 
 ## Final thoughts
 
