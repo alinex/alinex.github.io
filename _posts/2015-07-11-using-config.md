@@ -140,22 +140,21 @@ builder -v -c test
 ```
 
 The output will look something like:
-``` text
-Working on ./
-run automatic tests
-Linting coffee code
-✓ src/configSchema.coffee
-  ✓ src/index.coffee
 
-⚡ Warning! » 0 errors and 0 warning in 2 files
-Run mocha tests
+    Working on ./
+    run automatic tests
+    Linting coffee code
+    ✓ src/configSchema.coffee
+      ✓ src/index.coffee
 
-  Base
-    config
-      ✓ should run the selfcheck on the schema
+    ⚡ Warning! » 0 errors and 0 warning in 2 files
+    Run mocha tests
 
-  1 passing (28ms)
-```
+      Base
+        config
+          ✓ should run the selfcheck on the schema
+
+      1 passing (28ms)
 
 And if something goes wrong try debugging like:
 
