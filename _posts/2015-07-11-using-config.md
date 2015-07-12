@@ -232,3 +232,7 @@ The output after 3 seconds will be:
 Welcome Alex and have fun with this app.
 ```
 
+# Other lessons:
+
+- [Create Packages with Builder](/2015/06/27/builder.html)
+- Using Config
