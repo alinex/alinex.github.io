@@ -33,8 +33,8 @@ the [General docs](http://alinex.github.io/node-alinex/).
     validation and sanitize of simple or complex values</p>
 <p><a href="http://alinex.github.io/node-config/">config</a>
     configuration management</p>
-<p><a href="http://alinex.github.io/node-spawn/">spawn</a>
-    validation and sanitize of simple or complex values</p>
+<p><a href="http://alinex.github.io/node-exec/">exec</a>
+    async execution control for other processes</p>
 <p><a href="http://alinex.github.io/node-fs/">fs</a>
     enhancement of the node filesystem library</p>
 <p><a href="http://alinex.github.io/node-mysql/">mysql</a>
