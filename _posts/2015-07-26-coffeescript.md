@@ -1,7 +1,7 @@
 ---
 title: CoffeeScript
 layout: post
-tags: coffee
+tags: CoffeeScript
 ---
 
 As I started writing javascript for Node.JS I got a lot of problems caused by

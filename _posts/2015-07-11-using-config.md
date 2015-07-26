@@ -1,7 +1,7 @@
 ---
 title: Using Config
 layout: post
-tags: Config Validator Example
+tags: Config Validator Example CoffeeScript
 ---
 
 In this article I will show you how you make your application configurable with
