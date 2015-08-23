@@ -1,7 +1,7 @@
 ---
 title: Major Release of Validator
 layout: post
-tags: Validator
+tags: Validator Development
 ---
 
 About two weeks ago I finished the rewrite on the
