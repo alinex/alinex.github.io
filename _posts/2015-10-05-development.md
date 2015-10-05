@@ -1,7 +1,7 @@
 ---
 title: Current Development
 layout: post
-tags: Development, Database, Server
+tags: Development Database Server
 ---
 
 Over the summer the planning and coding of more and more alinex modules were
