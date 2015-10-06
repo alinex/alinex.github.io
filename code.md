@@ -37,8 +37,8 @@ the [General docs](http://alinex.github.io/node-alinex/).
     async execution control for other processes</p>
 <p><a href="http://alinex.github.io/node-fs/">fs</a>
     enhancement of the node filesystem library</p>
-<p><a href="http://alinex.github.io/node-mysql/">mysql</a>
-    mysql wrapper module</p>
+<p><a href="http://alinex.github.io/node-database/">database</a>
+    wrapper module supporting mysql and more</p>
 <p><a href="http://alinex.github.io/node-server/">server</a>
     basic webserver based on express</p>
 
