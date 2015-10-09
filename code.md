@@ -16,12 +16,14 @@ the [General docs](http://alinex.github.io/node-alinex/).
   <div class="col-md-4 col-sm-6 col-xs-12">
 
 <h3>General Helpers</h3>
+<p><a href="http://alinex.github.io/node-async/">async</a>
+    asynchronous control flow</p>
 <p><a href="http://alinex.github.io/node-builder/">builder</a>
     a built tool to help while developing</p>
 <p><a href="http://alinex.github.io/node-error/">error</a>
     error handler with code view, source map support...</p>
-<p><a href="http://alinex.github.io/node-async/">async</a>
-    asynchronous control flow</p>
+<p><a href="http://alinex.github.io/node-sshtunnel/">sshtunnel</a>
+    ssh port tunneling made easy</p>
 <p><a href="http://alinex.github.io/node-util/">util</a>
     different smaller helpers for string, array and objects</p>
 
