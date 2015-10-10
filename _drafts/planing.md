@@ -6,8 +6,6 @@ Placeholder Syntax
 
 Symbols:
 ? => used in postgres (shift from array)
-${name}$ => element from data object
-${name.el}$ => sub element from data object
 
 number -> insert
 string -> insert maybe quoted
@@ -16,39 +14,52 @@ object -> using toString()
 
 Object Syntax
 ---------------------------
-use $... for functions
+use $... for functions -> not neccessary
+use @... for names if used as value
+the rest are values
 database specific
 validator
 
-select: ['name', 'age'] # fields array
+
+select: ['@name', '@age'] # fields array
 from: 'person'
 
 select: '*'
 from: 'person'
-join: 'address' # full join
+join: '@address' # full join
 join:
-  $left: 'address' # left join, right, outer, inner
-  $on:             # join criteria
-    ID: 'person.addressID'
+  address:
+    type: 'left'   # left join (default), right, outer, inner
+    on:            # join criteria
+      ID: '@person.addressID'
+      age:
+        gt: 5
 
 # named column
 select:
-  PersonName: 'name'
+  PersonName: '@name'
+select:
+  PersonName:
+    count: '*'
+
+select: '*'
 
 # named table
 from:
   p: 'person'
 join:
-  a:
-    $left: 'address'
+  address;
+    type: 'left'   # left join, right, outer, inner
+    alias: '@a'
 
 # function $distinct $count
 
 where:
   age: 30
   name:
-    $like: 'a%' # $or
-
+    like: 'a%' # $or
+  age:
+    gt: '@maxage'
 order:
   num: 'asc'
 
@@ -64,21 +75,19 @@ offset: 10
 
 
 
-Sa
-- plan placeholder syntax
-- server: adding authorization
 So
 - plan object call like mongo
 -----------------------------------
 Mo
-- code placeholder syntax
-Di
 - test placeholder syntax
+Di
+- code object call select
 Mi
-- code object call
+- code object call update, insert
 Do
 - test object call
 Fr
+- server: adding authorization
 -----------------------------------
 SA
 - document database

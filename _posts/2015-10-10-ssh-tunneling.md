@@ -5,7 +5,7 @@ tags: SSH Development
 ---
 
 First I didn't plan to make a new module but as I needed the tunneling feature for
-my [database](http://alinex.github.io/node-database/) I didn't found a appropriate
+my [database](http://alinex.github.io/node-database/) I didn't found an appropriate
 module on the net.
 Within two days I got the planing, coding and testing ready and have a stable
 version based on ssh2 module, now.
