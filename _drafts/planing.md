@@ -14,56 +14,83 @@ object -> using toString()
 
 Object Syntax
 ---------------------------
-use $... for functions -> not neccessary
 use @... for names if used as value
+use $... for functions -> more readable
 the rest are values
 database specific
 validator
 
 
 select: ['@name', '@age'] # fields array
-from: 'person'
+from: '@person'
 
 select: '*'
-from: 'person'
-join: '@address' # full join
-join:
-  address:
-    type: 'left'   # left join (default), right, outer, inner
-    on:            # join criteria
-      ID: '@person.addressID'
-      age:
-        gt: 5
+from: '@person'
+
+select:
+  $count: '*'
+from: '@person'
 
 # named column
 select:
   PersonName: '@name'
 select:
   PersonName:
-    count: '*'
-
-select: '*'
+    $count: '*'
 
 # named table
+select: '*'
+form:
+  Person: @person
+
+select: '*'
 from:
-  p: 'person'
-join:
-  address;
-    type: 'left'   # left join, right, outer, inner
-    alias: '@a'
+  Person: @person
+  Address:
+    address:
+      join: 'left'   # left join (default), right, outer, inner
+      on:            # join criteria
+        ID: '@person.addressID'
+        age:
+          $gt: 5
+
+select: '*'
+from: [
+  '@person'
+,
+  address:
+    join: 'left'   # left join (default), right, outer, inner
+    on:            # join criteria
+      ID: '@person.addressID'
+      age:
+        $gt: 5
+]
 
 # function $distinct $count
 
 where:
-  age: 30
-  name:
-    like: 'a%' # $or
   age:
-    gt: '@maxage'
-order:
-  num: 'asc'
+    $or: [15, 30]
+  name:
+    $like: 'a%' # $or
+  age:
+    $gt: '@maxage'
 
-#group
+group: 'age'
+group: [...]
+
+having:
+
+order: 'age'
+order: [...]
+order:
+  num: 'desc'
+order: [
+  $concat: []
+  sort: 'asc'
+,
+  num: 'asc'
+]
 
 limit: 5
 offset: 10
@@ -74,10 +101,6 @@ offset: 10
 
 
 
-
-So
-- plan object call like mongo
------------------------------------
 Mo
 - test placeholder syntax
 Di
