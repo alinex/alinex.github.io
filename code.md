@@ -26,21 +26,21 @@ the [General docs](http://alinex.github.io/node-alinex/).
     ssh port tunneling made easy</p>
 <p><a href="http://alinex.github.io/node-util/">util</a>
     different smaller helpers for string, array and objects</p>
+<p><a href="http://alinex.github.io/node-validator/">validator</a>
+    validation and sanitize of simple or complex values</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
 <h3>Base Modules</h3>
-<p><a href="http://alinex.github.io/node-validator/">validator</a>
-    validation and sanitize of simple or complex values</p>
 <p><a href="http://alinex.github.io/node-config/">config</a>
     configuration management</p>
+<p><a href="http://alinex.github.io/node-database/">database</a>
+    wrapper module supporting mysql and more</p>
 <p><a href="http://alinex.github.io/node-exec/">exec</a>
     async execution control for other processes</p>
 <p><a href="http://alinex.github.io/node-fs/">fs</a>
     enhancement of the node filesystem library</p>
-<p><a href="http://alinex.github.io/node-database/">database</a>
-    wrapper module supporting mysql and more</p>
 <p><a href="http://alinex.github.io/node-server/">server</a>
     basic webserver based on express</p>
 
@@ -49,6 +49,8 @@ the [General docs](http://alinex.github.io/node-alinex/).
 
 <h3>Applications</h3>
 
+<p><a href="http://alinex.github.io/node-monitor/">monitor</a>
+    monitoring IT systems</p>
 <p><a href="http://alinex.github.io/node-worktime/">worktime</a>
     command line application for logging work times</p>
 
@@ -56,7 +58,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
 </div>
 
 Some more modules are planned or in development but didn't reach a stable
-and presentable stage. I will add them as soon as they are ready to use.
+and presentable stage. I will add them as soon as they are ready.
 
 <!--
 
