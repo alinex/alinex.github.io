@@ -3,7 +3,7 @@ title: Modules
 layout: default
 ---
 
-### Node.JS / IO.JS
+### Node.JS
 
 This modules are written in CoffeeScript but are already compiled to JavaScript
 in the NPM download package. So no need to worry if you aren't familiar with
@@ -50,7 +50,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
 <h3>Applications</h3>
 
 <p><a href="http://alinex.github.io/node-monitor/">monitor</a>
-    monitoring IT systems</p>
+    server application for monitoring IT systems</p>
 <p><a href="http://alinex.github.io/node-worktime/">worktime</a>
     command line application for logging work times</p>
 
