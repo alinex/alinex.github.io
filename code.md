@@ -22,6 +22,8 @@ the [General docs](http://alinex.github.io/node-alinex/).
     a built tool to help while developing</p>
 <p><a href="http://alinex.github.io/node-error/">error</a>
     error handler with code view, source map support...</p>
+<p><a href="http://alinex.github.io/node-report/">report</a>
+    easy report generation using markdown</p>
 <p><a href="http://alinex.github.io/node-sshtunnel/">sshtunnel</a>
     ssh port tunneling made easy</p>
 <p><a href="http://alinex.github.io/node-util/">util</a>
