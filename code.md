@@ -74,7 +74,7 @@ and presentable stage. I will add them as soon as they are ready.
 </ul>
 
 -->
-
+<!--
 ### PHP Server
 
 The [PHP Server](http://alinex.de/server/html/index.html) is a collection of
@@ -82,3 +82,4 @@ modules to make an universal client/server system for individual web application
 but the development is stopped.
 
 A lot of the ideas are developed further on in the Node section.
+-->
