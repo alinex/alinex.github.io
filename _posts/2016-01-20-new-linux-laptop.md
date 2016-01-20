@@ -33,10 +33,10 @@ boot order higher as the WindowsBoot entry.
 
 That got me a workable system but the WLAN chipset won't run with Ubuntu 15.10.
 Before taking to much time there I used an USB WLAN Stick. I will check for this
-on the next release of Ubuntu 16.04 LTS.
+on the next release of LinuxMint / Ubuntu 16.04 LTS.
 
 
 Fazit
 ================================================================================
 The end result is fine. I got a system working fast and doing everything I want
-for a reasonable price.
+for a reasonable price. But it is like always - it needs some time.
