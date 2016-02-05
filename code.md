@@ -74,7 +74,7 @@ fast lookup of often used packages.
 <div class="row modules">
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h3>General Helpers</h3>
+<h4>General Helpers</h4>
 
 <p><a href="https://github.com/caolan/async/blob/master/README.md">async</a> easy asynchronous calls</p>
 <p><a href="https://github.com/visionmedia/debug/blob/master/Readme.md">debug</a> life debugging</p>
@@ -83,14 +83,14 @@ fast lookup of often used packages.
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h3>Network</h3>
+<h4>Network</h4>
 
 <p><a href="http://nodemailer.com/">nodemail</a> sending emails</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h3>Applications</h3>
+<h4>Applications</h4>
 
 <p><a href="https://github.com/brianc/node-postgres/blob/master/README.md">nodemail</a> PostgreSQL client</p>
 
