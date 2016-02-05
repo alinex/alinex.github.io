@@ -79,6 +79,16 @@ fast lookup of often used packages.
 <p><a href="https://github.com/caolan/async/blob/master/README.md">async</a> easy asynchronous calls</p>
 <p><a href="https://github.com/visionmedia/debug/blob/master/Readme.md">debug</a> life debugging</p>
 <p><a href="https://github.com/chalk/chalk/blob/master/readme.md">chalk</a> terminal string styling</p>
+<p><a href="http://yargs.js.org/docs/index.html">yargs</a> parsing optstrings from the commandline</p>
+
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+
+<h4>Format</h4>
+
+<p><a href="https://github.com/zemirco/json2csv/blob/master/README.md">json2csv</a> easy converting</p>
+<p><a href="http://mathjs.org/docs/index.html">mathjs</a> math library with unit support</p>
+<p><a href="http://momentjs.com/docs/">moment</a> parse and manipulate dates and times</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
@@ -86,13 +96,6 @@ fast lookup of often used packages.
 <h4>Network</h4>
 
 <p><a href="http://nodemailer.com/">nodemail</a> sending emails</p>
-
-  </div>
-  <div class="col-md-4 col-sm-6 col-xs-12">
-
-<h4>Applications</h4>
-
-<p><a href="https://github.com/brianc/node-postgres/blob/master/README.md">nodemail</a> PostgreSQL client</p>
 
   </div>
 </div>
