@@ -15,7 +15,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
 <div class="row modules">
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h3>General Helpers</h3>
+<h4>General Helpers</h4>
 <p><a href="http://alinex.github.io/node-async/">async</a>
     asynchronous control flow</p>
 <p><a href="http://alinex.github.io/node-builder/">builder</a>
@@ -32,7 +32,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h3>Base Modules</h3>
+<h4>Base Modules</h4>
 <p><a href="http://alinex.github.io/node-config/">config</a>
     configuration management</p>
 <p><a href="http://alinex.github.io/node-database/">database</a>
@@ -47,7 +47,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h3>Applications</h3>
+<h4>Applications</h4>
 
 <p><a href="http://alinex.github.io/node-dbreport/">dbreport</a>
     tool to query database and send results as email attachements</p>
@@ -56,7 +56,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
 <p><a href="http://alinex.github.io/node-worktime/">worktime</a>
     command line application for logging work times</p>
 
-<h3>Old/unmaintained</h3>
+<h4>Old/unmaintained</h4>
 
 <p><a href="http://alinex.github.io/node-error/">error</a>
     error handler with code view, source map support...</p>
