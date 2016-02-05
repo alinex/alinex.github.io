@@ -1,4 +1,4 @@
-highlighter: pygments
+highlighter: rouge
 timezone: Europe/Berlin
 
 title: Alinex
