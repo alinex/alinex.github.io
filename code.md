@@ -66,29 +66,33 @@ the [General docs](http://alinex.github.io/node-alinex/).
 Some more modules are planned or in development but didn't reach a stable
 and presentable stage. I will add them as soon as they are ready.
 
-### Often used Third Party modules
+### Node.JS Third Party Modules
 
 This is used as a quick link to the individual documentation pages helping in
-fast lookup.
+fast lookup of often used packages.
 
 <div class="row modules">
   <div class="col-md-4 col-sm-6 col-xs-12">
 
 <h3>General Helpers</h3>
 
+<p><a href="https://github.com/caolan/async/blob/master/README.md">async</a> easy asynchronous calls</p>
+<p><a href="https://github.com/visionmedia/debug/blob/master/Readme.md">debug</a> life debugging</p>
+<p><a href="https://github.com/chalk/chalk/blob/master/readme.md">chalk</a> terminal string styling</p>
+
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
 <h3>Network</h3>
 
-<p><a href="http://nodemailer.com/">nodemail</a>
-    sending emails</p>
+<p><a href="http://nodemailer.com/">nodemail</a> sending emails</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
 <h3>Applications</h3>
 
+<p><a href="https://github.com/brianc/node-postgres/blob/master/README.md">nodemail</a> PostgreSQL client</p>
 
   </div>
 </div>
