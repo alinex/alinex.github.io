@@ -74,11 +74,12 @@ fast lookup of often used packages.
 <div class="row modules">
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h4>General Helpers</h4>
+<h4>General Tools</h4>
 
 <p><a href="https://github.com/caolan/async/blob/master/README.md">async</a> easy asynchronous calls</p>
 <p><a href="https://github.com/visionmedia/debug/blob/master/Readme.md">debug</a> life debugging</p>
 <p><a href="https://github.com/chalk/chalk/blob/master/readme.md">chalk</a> terminal string styling</p>
+<p><a href="https://github.com/flatiron/prompt/blob/master/README.md">prompt</a> command line prompt</p>
 <p><a href="http://yargs.js.org/docs/index.html">yargs</a> parsing optstrings from the commandline</p>
 
   </div>
@@ -96,6 +97,12 @@ fast lookup of often used packages.
 <h4>Network</h4>
 
 <p><a href="http://nodemailer.com/">nodemail</a> sending emails</p>
+<p><a href="https://github.com/request/request/blob/master/README.md">request</a> simple http/https requests</p>
+
+<h4>Applications</h4>
+
+<p><a href="http://mochajs.org/">mocha</a> simple, flexible test tool</p>
+<p><a href="http://pm2.keymetrics.io/docs/usage/cluster-mode/">pm2</a> production process manager</p>
 
   </div>
 </div>
