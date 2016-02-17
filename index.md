@@ -28,7 +28,7 @@ some of my latest node modules with you.
   <div class="col-md-4">
     <form action="docs">
       <button type="submit" class="btn btn-primary btn-block">
-        <span class="glyphicon glyphicon-settings" aria-hidden="true"></span> Blog
+        <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Development
       </button>
     </form>
   </div>
