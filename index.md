@@ -21,21 +21,21 @@ some of my latest node modules with you.
   <div class="col-md-4">
     <form action="blog">
       <button type="submit" class="btn btn-primary btn-block">
-        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Blog
+        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp; Blog
       </button>
     </form>
   </div>
   <div class="col-md-4">
-    <form action="docs">
+    <form action="develop">
       <button type="submit" class="btn btn-primary btn-block">
-        <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Development
+        <span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp; Develop
       </button>
     </form>
   </div>
   <div class="col-md-4">
     <form action="code.html">
       <button type="submit" class="btn btn-warning btn-block">
-        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Code
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp; Code
       </button>
     </form>
   </div>
