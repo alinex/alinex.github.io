@@ -21,7 +21,7 @@ some of my latest node modules with you.
   <div class="col-md-4">
     <form action="blog">
       <button type="submit" class="btn btn-primary btn-block">
-        <span class="glyphicon glyphicon-pen" aria-hidden="true"></span> Blog
+        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Blog
       </button>
     </form>
   </div>
