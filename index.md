@@ -13,8 +13,6 @@ To my small Alinex universe where I share my private test results and
 developments from development and more. This is also a central place to share
 some of my latest node modules with you.
 
-<p class="text-right"><i>Alex</i></p>
-
 <p><br /><br /></p>
 
 <div class="row">
