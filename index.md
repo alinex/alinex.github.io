@@ -10,7 +10,7 @@ layout: title
 # Welcome
 
 To my small Alinex universe where I share my private test results and
-developments in web development and more. This is also a central place to share
+developments from development and more. This is also a central place to share
 some of my latest node modules with you.
 
 <p class="text-right"><i>Alex</i></p>
@@ -18,17 +18,24 @@ some of my latest node modules with you.
 <p><br /><br /></p>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <form action="blog">
       <button type="submit" class="btn btn-primary btn-block">
-        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Blog
+        <span class="glyphicon glyphicon-pen" aria-hidden="true"></span> Blog
       </button>
     </form>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
+    <form action="docs">
+      <button type="submit" class="btn btn-primary btn-block">
+        <span class="glyphicon glyphicon-settings" aria-hidden="true"></span> Blog
+      </button>
+    </form>
+  </div>
+  <div class="col-md-4">
     <form action="code.html">
       <button type="submit" class="btn btn-warning btn-block">
-        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Code
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Code
       </button>
     </form>
   </div>
