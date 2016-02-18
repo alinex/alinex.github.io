@@ -37,6 +37,9 @@ h1, h2, h3, h4, h5, .btn {
 h1, h2, h3, h4, h1 a, h2 a, h3 a, h4 a {
   color: #f0ad4e;
 }
+h4, h4 a {
+  color: #337ab7;
+}
 p, ul {
   font-family: 'SansationRegular';
   font-size: 12pt;
@@ -54,13 +57,13 @@ a[href^="https://alinex.github.io/node-"],
   font-family: 'Xcelsion';
 }
 
-.modulees a[href^="http://alinex.github.io/node-"] {
+.modules a[href^="http://alinex.github.io/node-"] {
   font-size: 200%;
   float: left;
   padding-top: 8px;
   padding-right: 8px;
 }
-.modulses p {
+.modules p {
   padding-top: 8px;
 }
 
