@@ -1,4 +1,11 @@
 
+<h3><a href="/develop">Development</a></h3>
+
 {% for page in site.develop %}
+  {% if page.level == 1 %}
+  <p>&nbsp;</p><h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
+  {% elsif page.level == 0 %}
+  {% else %}
   <h5><a href="{{ page.url }}">{{ page.title }}</a></h5>
+  {% endif %}
 {% endfor %}

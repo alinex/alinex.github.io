@@ -11,4 +11,3 @@ paginate_path: "blog/page:num"
 collections:
   develop:
     output: true
-    

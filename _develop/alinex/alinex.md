@@ -1,11 +1,12 @@
 ---
 title: What is Alinex?
 layout: develop
+level: 1
 ---
 
-Just now it is a modular, flexible and powerful tool set for applications.
-It aims to help the developer to create individual solutions in a fast and easy
-but stable way.
+Just now it is a modular, flexible and powerful tool set for applications in the#
+backend and frontend. It aims to help the developer to create individual solutions
+in a fast and easy but stable way.
 
 
 Why I created it?
