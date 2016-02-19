@@ -1,5 +1,5 @@
 ---
-title: Development Tools
+title: Tools
 layout: develop
 level: 1
 ---

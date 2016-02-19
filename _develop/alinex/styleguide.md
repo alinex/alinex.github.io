@@ -1,9 +1,8 @@
 ---
-title: What is Alinex?
+title: Styleguide
 layout: develop
 ---
-Developer Guideline
-=================================================
+
 This guide should give an overview of the general style within the alinex system
 and it's packages. It is neither meant as a hard limit but neither as some
 nice to have rules. So as much as possible this rules have to be followed.
