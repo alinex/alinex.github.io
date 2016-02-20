@@ -4,7 +4,7 @@ layout: develop
 level: 1
 ---
 
-Just now it is a modular, flexible and powerful tool set for applications in the#
+Just now it is a modular, flexible and powerful tool set for applications in the
 backend and frontend. It aims to help the developer to create individual solutions
 in a fast and easy but stable way.
 
@@ -20,12 +20,34 @@ I worked further on creating a modular system with some of the great modules
 available. Hardest thing is to find the best module for each job out of the
 great repository.
 With this project I went to new land (for me) in the web technologies and tried
-lots of the current propagated technologies an patterns out.
+lots of the current propagated technologies and patterns out.
+
+Because I love the easy readable syntax of CoffeeScript I based all my development
+on it.
+
+
+Language Decision
+-------------------------------------------------
+As always the world is neither black nor white but something between and everybody
+sees it his way. You may decide other than I and the nodejs language is neither
+always the best but I love the rapid prototyping and package management of it.
+
+I am using CoffeeScript here but all modules will be transformed into pure
+JavaScript before releasing them. So you have no need to use CoffeeScript if you
+include one of the alinex modules.
+
+
+Alinex Modules Relations
+-------------------------------------------------
+The alinex modules often have a strong relation to the
+[config](http://alinex.github.io/node-config) and
+[vakidator](http://alinex.github.io/node-validator) modules but don't be alarmed
+you don't have to use only the alinex modules and they are usable also outside
+the alinex universe.
 
 
 Roadmap
 -------------------------------------------------
-
 There is no real roadmap for the time and functionality. It all depends on my
 personal time and interests. But I will give a short overview of the big
 points, what is planned for this year:
@@ -35,5 +57,4 @@ points, what is planned for this year:
 - more applications
 
 See the [Planning Board](https://trello.com/b/lOY5hCx7/node-js) for more up to
-date information of there I'm working at. Also the [Ideas](src/doc/ideas.md)
-page will hold some general ideas and thoughts.
+date information of there I'm working at.

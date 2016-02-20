@@ -58,13 +58,8 @@ a[href^="https://alinex.github.io/node-"],
 }
 
 .modules a[href^="http://alinex.github.io/node-"] {
-  font-size: 200%;
-  float: left;
   padding-top: 8px;
   padding-right: 8px;
-}
-.modules p {
-  padding-top: 8px;
 }
 
 .imprint {

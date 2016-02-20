@@ -3,7 +3,8 @@ title: Modules
 layout: default
 ---
 
-### Node.JS
+Node.JS
+------------------------------------------------------------------------------
 
 This modules are written in CoffeeScript but are already compiled to JavaScript
 in the NPM download package. So no need to worry if you aren't familiar with
@@ -15,7 +16,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
 <div class="row modules">
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h4>General Helpers</h4>
+<h3>General Helpers</h3>
 <p><a href="http://alinex.github.io/node-async/">async</a>
     asynchronous control flow</p>
 <p><a href="http://alinex.github.io/node-builder/">builder</a>
@@ -32,7 +33,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h4>Base Modules</h4>
+<h3>Base Modules</h3>
 <p><a href="http://alinex.github.io/node-config/">config</a>
     configuration management</p>
 <p><a href="http://alinex.github.io/node-database/">database</a>
@@ -47,7 +48,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h4>Applications</h4>
+<h3>Applications</h3>
 
 <p><a href="http://alinex.github.io/node-dbreport/">dbreport</a>
     tool to query database and send results as email attachements</p>
@@ -56,17 +57,14 @@ the [General docs](http://alinex.github.io/node-alinex/).
 <p><a href="http://alinex.github.io/node-worktime/">worktime</a>
     command line application for logging work times</p>
 
-<h4>Old/unmaintained</h4>
-
-<p><a href="http://alinex.github.io/node-error/">error</a>
-    error handler with code view, source map support...</p>
   </div>
 </div>
 
 Some more modules are planned or in development but didn't reach a stable
 and presentable stage. I will add them as soon as they are ready.
 
-### Node.JS Third Party Modules
+Third Party NodeJS
+---------------------------------------------------------------------------
 
 This is used as a quick link to the individual documentation pages helping in
 fast lookup of often used packages.
@@ -74,38 +72,66 @@ fast lookup of often used packages.
 <div class="row modules">
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h4>General Tools</h4>
+<h3>General Tools</h3>
 
 <p><a href="https://github.com/caolan/async/blob/master/README.md">async</a> easy asynchronous calls</p>
 <p><a href="https://github.com/visionmedia/debug/blob/master/Readme.md">debug</a> life debugging</p>
+<p><a href="https://github.com/pgte/carrier">carrier</a> stream line reader</p>
 <p><a href="https://github.com/chalk/chalk/blob/master/readme.md">chalk</a> terminal string styling</p>
+<p><a href="https://github.com/medikoo/memoize">Memoizee</a> make a function or method using cache for results</p>
 <p><a href="https://github.com/cho45/named-regexp.js/blob/master/README.md">named-regexp</a> named capture feature for RegExp</p>
 <p><a href="https://github.com/flatiron/prompt/blob/master/README.md">prompt</a> command line prompt</p>
+
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+
+<h3>Format</h3>
+
+<p><a href="https://github.com/wanasit/chrono">Chrono</a> natural language date parser</p>
+<p><a href="http://handlebarsjs.com/">handlebars</a> template engine</p>
+<p><a href="https://github.com/marcbachmann/node-html-pdf/blob/master/README.md">html-pdf</a> convert html to pdf or image using phantomjs</p>
+<p><a href="https://github.com/zemirco/json2csv/blob/master/README.md">json2csv</a> easy converting</p>
+<p><a href="https://github.com/nodeca/js-yaml">js-yaml</a> YAML parser (to read configurations</p>
+<p><a href="http://mathjs.org/docs/index.html">mathjs</a> math library with unit support</p>
+<p><a href="https://markdown-it.github.io/">markdown-it</a> convert markdown to html</p>
+<p><a href="http://momentjs.com/docs/">moment</a> parse and manipulate dates and times</p>
+<p><a href="https://github.com/Leonidas-from-XIV/node-xml2js">xml2js</a> Conversion from simple XML to JavaScript objects</p>
+
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+
+<h3>IO</h3>
+
+<p><a href="https://github.com/paulmillr/chokidar">chokidar</a> fs-watch wrapper</p>
+<p><a href="https://github.com/felixge/node-mysql">Mysql</a> easy to use mysql library</p>
+<p><a href="http://nodemailer.com/">nodemail</a> sending emails</p>
+<p><a href="https://github.com/flatiron/prompt/">Prompt</a> easy and beautiful command-line prompt</p>
+<p><a href="https://github.com/request/request/blob/master/README.md">request</a> simple http/https requests</p>
+<p><a href="https://github.com/flatiron/winston/">Winston</a> extensible multi-transport async logging library</p>
 <p><a href="http://yargs.js.org/docs/index.html">yargs</a> parsing option strings from the commandline</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h4>Format</h4>
+<h3>Development</h3>
 
-<p><a href="https://github.com/marcbachmann/node-html-pdf/blob/master/README.md">html-pdf</a> convert html to pdf or image using phantomjs</p>
-<p><a href="https://github.com/zemirco/json2csv/blob/master/README.md">json2csv</a> easy converting</p>
-<p><a href="http://mathjs.org/docs/index.html">mathjs</a> math library with unit support</p>
-<p><a href="https://markdown-it.github.io/">markdown-it</a> convert markdown to html<p>
-<p><a href="http://momentjs.com/docs/">moment</a> parse and manipulate dates and times</p>
+<p><a href="http://mochajs.org/">mocha</a> simple, flexible test tool</p>
+<p><a href="http://chaijs.com/">chai</a> assertion library that can be paired with mocha</p>  
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
-<h4>Network</h4>
+<h3>Applications</h3>
 
-<p><a href="http://nodemailer.com/">nodemail</a> sending emails</p>
-<p><a href="https://github.com/request/request/blob/master/README.md">request</a> simple http/https requests</p>
-
-<h4>Applications</h4>
-
-<p><a href="http://mochajs.org/">mocha</a> simple, flexible test tool</p>
+<p><a href="http://coffeescript.org/">CoffeeScript</a> a language that compiles into JavaScript but is easier to read and write</p>
 <p><a href="http://pm2.keymetrics.io/docs/usage/cluster-mode/">pm2</a> production process manager</p>
+
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+
+<h3>Webservices</h3>
+
+<p><a href="https://docs.angularjs.org/">AngularJS</a> client library is added here to be compiled into the client scripts</p>
 
   </div>
 </div>
