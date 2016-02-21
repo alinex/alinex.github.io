@@ -82,6 +82,11 @@ fast lookup of often used packages.
 <p><a href="https://github.com/cho45/named-regexp.js/blob/master/README.md">named-regexp</a> named capture feature for RegExp</p>
 <p><a href="https://github.com/flatiron/prompt/blob/master/README.md">prompt</a> command line prompt</p>
 
+<h3>Development</h3>
+
+<p><a href="http://mochajs.org/">mocha</a> simple, flexible test tool</p>
+<p><a href="http://chaijs.com/">chai</a> assertion library that can be paired with mocha</p>  
+
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
@@ -109,14 +114,6 @@ fast lookup of often used packages.
 <p><a href="https://github.com/request/request/blob/master/README.md">request</a> simple http/https requests</p>
 <p><a href="https://github.com/flatiron/winston/">Winston</a> extensible multi-transport async logging library</p>
 <p><a href="http://yargs.js.org/docs/index.html">yargs</a> parsing option strings from the commandline</p>
-
-  </div>
-  <div class="col-md-4 col-sm-6 col-xs-12">
-
-<h3>Development</h3>
-
-<p><a href="http://mochajs.org/">mocha</a> simple, flexible test tool</p>
-<p><a href="http://chaijs.com/">chai</a> assertion library that can be paired with mocha</p>  
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">

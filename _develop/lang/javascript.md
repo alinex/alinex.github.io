@@ -1,5 +1,5 @@
 ---
-title: JavaScript Tips & Tricks
+title: JavaScript
 layout: develop
 ---
 
