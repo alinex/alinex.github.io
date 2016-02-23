@@ -2,7 +2,7 @@ gems: [jekyll-paginate, jekyll-gist]
 #markdown:    kramdown
 #kramdown:
 #  fenced_code_blocks: true
-highlighter: rouge
+#highlighter: rouge
 
 timezone: Europe/Berlin
 
