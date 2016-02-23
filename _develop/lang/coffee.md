@@ -1,7 +1,16 @@
 ---
-title: CoffeeScript Tips & Tricks
+title: CoffeeScript
 layout: develop
 ---
+
+CoffeeScript is an easier syntax for JavaScript. It has a syntax inspired from Python
+and Ruby. The code will be transformed into real JavaScript before executing. This
+can be done on the fly or as a compiler before packaging and executing it in the
+productive environment.
+
+
+Why To Use It
+-------------------------------------------------
 
 CoffeeScript is used as development language because it is very easy to write
 and read. In my opinion it makes development and maintenance easier and faster.
@@ -9,10 +18,6 @@ Specially in the callback sequences of JavaScript.
 
 This page lists some tricks and tips which are mostly not mentioned in the
 official docs.
-
-Also in this documentation which is aimed for the alinex developer I often use
-examples in coffee script. While in description of modules which may be used
-anywhere I will use javascript so anybody can read it.
 
 
 Strings

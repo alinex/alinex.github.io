@@ -37,7 +37,7 @@ JavaScript before releasing them. So you have no need to use CoffeeScript if you
 include one of the alinex modules.
 
 
-Alinex Modules Relations
+Relations
 -------------------------------------------------
 The alinex modules often have a strong relation to the
 [config](http://alinex.github.io/node-config) and

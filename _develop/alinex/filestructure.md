@@ -12,7 +12,7 @@ Overview
 The locally installed system may be in one of the following states which
 presents the development cycle of the system:
 
-1. **Source** - that's the base data
+1. **Source** - the real code base
 2. **Development** - after installing
 3. **Installed** - if installed from npm (sources removed)
 4. **Productive** - after the system is configured

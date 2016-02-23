@@ -20,6 +20,7 @@ Variables
 Over all modules some common variable names will be used for the same values:
 
 - `cb` - for the callback method
+- `done` - alternatively used for the callback for better reading
 - `err` - for an error message object
 - `ex` - mostly the exception in a `try...catch` block
 
@@ -196,7 +197,7 @@ The general configuration is stored in files to be also available without
 database connection. To make it easy readable and maintainable it should
 be written in yml rather than json.
 
-[alinex-config](https://github.com/alinex/node-config/) helps in working with
+[alinex-config](http://alinex.github.io/node-config/) helps in working with
 such files.
 
 
