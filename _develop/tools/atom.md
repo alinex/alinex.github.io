@@ -70,6 +70,7 @@ At first it is very easy and a lot like sublime. The major shortcut to know for
 a command search is: `Ctrl+Shift+p`
 
 Additionally the following may be helpful:
+
 - `Ctrl-\` will toggle the file tree view
 - `Alt-\` switch focus to/from tree view
 - `Ctrl-T` open fuzzy find for files in current project
@@ -80,14 +81,17 @@ Additionally the following may be helpful:
 Editing
 --------------------------------------------------------------------------------
 **Move Cursor**
+
 - `Ctrl-Left` move to beginning of word
 - `Ctrl-Right` move to end of word
 - `Ctrl-G` go to line (line:column)
 
 **Edit**
+
 - `Ctrl-Up` / `Ctrl-Down` moves the current line or selected lines up/down
 
 **Multi cursor**
+
 - `Alt-Shift-Up` / `Alt-Shift-Down` adds another cursor one line above/below
 - `Strg-Click` add or remove another cursor
 - `ESC` to remove multi cursor and go back to a single one
@@ -96,6 +100,7 @@ Editing
 Code Specific Helpers
 --------------------------------------------------------------------------------
 **Show Help**
+
 - `Ctrl-Shift-M` shows a rendered preview (realtime)
 - `Alt-Shift-T` shows the todo list (using todo-show)
 
@@ -104,6 +109,7 @@ Using Git
 --------------------------------------------------------------------------------
 
 **Modify**
+
 - `Ctrl-Shift-H` show menu of all git commands
 - `Ctrl-Shift-A` adds new files
 - `Ctrl-Shift-A S` show status of files
