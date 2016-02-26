@@ -24,7 +24,7 @@ The Handlebars Expressions like seen above are written like (a double stash befo
 followed with the content to be evaluated, followed by a closing double stash): 
 
 ``` text
-{{ content goes here }}
+\{{ content goes here }}
 ```
 
 Special HTML characters are escaped automatically, but you may prevent this
