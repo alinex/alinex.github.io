@@ -5,6 +5,11 @@ layout: develop
 
 Short description of how to best work with npm.
 
+Read more on the following pages:
+
+* TOC
+{:toc}
+
 
 Application Installation
 -------------------------------------------------

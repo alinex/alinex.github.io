@@ -7,6 +7,11 @@ This editor is partly new but with good speed and support. But keep in minds bug
 may happen mostly in some plugins which are not as propper written as the base.
 But that's nothing to stop an developer using it.
 
+Read more on the following pages:
+
+* TOC
+{:toc}
+
 
 Installing Atom
 --------------------------------------------------------------------------------

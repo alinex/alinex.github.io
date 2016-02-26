@@ -8,6 +8,11 @@ and Ruby. The code will be transformed into real JavaScript before executing. Th
 can be done on the fly or as a compiler before packaging and executing it in the
 productive environment.
 
+Read more on the following pages:
+
+* TOC
+{:toc}
+
 
 Why To Use It
 -------------------------------------------------

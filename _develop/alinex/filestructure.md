@@ -198,22 +198,22 @@ __Source__
 
     config: <app>/var/src/config/
     locale: <app>/var/src/locale/
-    data: <app>/var/src/data/
+    data:   <app>/var/src/data/
 
 __Local__
 
     config: <app>/var/local/config/
-    data: <app>/var/local/data/
+    data:   <app>/var/local/data/
 
 __Global__
 
     config: /etc/<app>/
-    data: /var/lib/<app>/
+    data:   /var/lib/<app>/
 
 __User__
 
     config: ~/.<app>/config/
-    data: ~/.<app>/data/
+    data:   ~/.<app>/data/
 
 You may also use softlinks for `var/local` or within it to move your files to
 any other position on your filesystem.

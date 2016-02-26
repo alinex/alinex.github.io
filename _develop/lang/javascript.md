@@ -14,6 +14,11 @@ modern in ECMAScript6 or ECMAScript7.
 
 Find more about JavaScript on the server under [Node.Js](nodejs.html).
 
+This document contains:
+
+* TOC
+{:toc}
+
 
 Specification
 -------------------------------------------------

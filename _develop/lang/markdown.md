@@ -12,6 +12,11 @@ The following examples should help to use the right syntax which will be
 interpreted by github and the integrated document generation of the
 [alinex-builder](http://alinex.github.io/node-builder).
 
+Read more on the following pages:
+
+* TOC
+{:toc}
+
 
 Headings
 -------------------------------------------------
