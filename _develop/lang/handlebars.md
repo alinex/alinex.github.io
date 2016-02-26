@@ -26,6 +26,7 @@ Table of Contents
 {:toc}
 
 
+
 Expression Syntax
 ===================================================================
 The Handlebars Expressions like seen above are written like (a double stash before,
