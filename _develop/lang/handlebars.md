@@ -18,13 +18,10 @@ An template may look like:
     </ul>
     {% endraw %}
 
-
-Table of Contents
-===================================================================
+Read more on the following pages:
 
 * TOC
 {:toc}
-
 
 
 Expression Syntax
