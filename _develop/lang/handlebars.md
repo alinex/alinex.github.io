@@ -3,9 +3,6 @@ title: Handlebars Templates
 layout: develop
 ---
 
-* TOC
-{:toc}
-
 Handlebars is a simple web template system with minimal logic support. The
 templates written in this language will be compiled and executed with specific
 context to get the result. It's main purpose is for HTML output but can be used
@@ -20,6 +17,13 @@ An template may look like:
     {{/each}}
     </ul>
     {% endraw %}
+
+
+Table of Contents
+===================================================================
+
+* TOC
+{:toc}
 
 
 Expression Syntax
