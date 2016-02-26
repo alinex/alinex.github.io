@@ -6,6 +6,11 @@ layout: develop
 All modules in the alinex universe will use the same directory structure.
 This follows the general standards and is described here.
 
+Read more on the following pages:
+
+* TOC
+{:toc}
+
 
 Overview
 -------------------------------------------------
@@ -191,24 +196,24 @@ the system will look in the following places and the later has the higher preced
 
 __Source__
 
-config: <app>/var/src/config/
-locale: <app>/var/src/locale/
-data: <app>/var/src/data/
+    config: <app>/var/src/config/
+    locale: <app>/var/src/locale/
+    data: <app>/var/src/data/
 
 __Local__
 
-config: <app>/var/local/config/
-data: <app>/var/local/data/
+    config: <app>/var/local/config/
+    data: <app>/var/local/data/
 
 __Global__
 
-config: /etc/<app>/
-data: /var/lib/<app>/
+    config: /etc/<app>/
+    data: /var/lib/<app>/
 
 __User__
 
-config: ~/.<app>/config/
-data: ~/.<app>/data/
+    config: ~/.<app>/config/
+    data: ~/.<app>/data/
 
 You may also use softlinks for `var/local` or within it to move your files to
 any other position on your filesystem.

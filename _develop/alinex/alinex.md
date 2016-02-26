@@ -14,7 +14,7 @@ Why I created it?
 
 As I got more into the concept of node.js I found out that this is the ideal
 solution for the alinex platform. I use this project to check new technologies
-out and hopefully bring it more on the way than my php server part just now.
+out and hopefully bring it more on the way than my PHP server part just now.
 
 I worked further on creating a modular system with some of the great modules
 available. Hardest thing is to find the best module for each job out of the
@@ -41,7 +41,7 @@ Relations
 -------------------------------------------------
 The alinex modules often have a strong relation to the
 [config](http://alinex.github.io/node-config) and
-[vakidator](http://alinex.github.io/node-validator) modules but don't be alarmed
+[validator](http://alinex.github.io/node-validator) modules but don't be alarmed
 you don't have to use only the alinex modules and they are usable also outside
 the alinex universe.
 
@@ -55,6 +55,7 @@ points, what is planned for this year:
 - hardening base modules
 - optimizing documentation
 - more applications
+- make the server module usable
 
 See the [Planning Board](https://trello.com/b/lOY5hCx7/node-js) for more up to
 date information of there I'm working at.
