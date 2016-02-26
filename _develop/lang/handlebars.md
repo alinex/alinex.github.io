@@ -23,7 +23,9 @@ Expression Syntax
 The Handlebars Expressions like seen above are written like (a double stash before,
 followed with the content to be evaluated, followed by a closing double stash): 
 
-    {{ content goes here }}
+``` text
+{{ content goes here }}
+```
 
 Special HTML characters are escaped automatically, but you may prevent this
 with the following syntax:
