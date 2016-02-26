@@ -10,11 +10,14 @@ for other text based formats, too.
 
 An template may look like:
 
-  <ul>  
-  {{#each users}}
-      <li>{% raw %}pMore fixes.{{firstname}} {{lastname}}{% endraw %}</li>      
-  {{/each}}
-  </ul>
+    {% raw %}
+    <ul>  
+    {{#each users}}
+        <li>{{firstname}} {{lastname}}</li>      
+    {{/each}}
+    </ul>
+    {% endraw %}
+    
 
 Expression Syntax
 ===================================================================
