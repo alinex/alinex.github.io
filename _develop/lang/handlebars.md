@@ -10,13 +10,11 @@ for other text based formats, too.
 
 An template may look like:
 
-  {% raw %}
-  <ul>
+  <ul>  
   {{#each users}}
-      <li>{{firstname}} {{lastname}}</li>
+      <li>{% raw %}pMore fixes.{{firstname}} {{lastname}}{% endraw %}</li>      
   {{/each}}
   </ul>
-  {% endraw %}
 
 Expression Syntax
 ===================================================================
@@ -114,4 +112,3 @@ We can use the parent path ../ to get the groupName property:
         {{/users}}
     ​</script>
     {% endraw %}
-    
