@@ -155,6 +155,18 @@ It can also contain an alternative to use if not:
     {{/if}}
     {% endraw %}
 
+And finally you can also chain multiple conditional blocks together:
+
+    {% raw %}
+    {{#if isActive}}
+      Is working now...
+    {{else if isInactive}}
+      Is inactive.
+    {{else}}
+      Unknown state.
+    {{/if}}
+    {% endraw %}
+
 ### unless block
 
 You can use the unless helper as the inverse of the `if` helper. His content will
@@ -255,3 +267,15 @@ This is useful for resolving values for array indexes.
       {{lookup ../foo @index}}
     {{/each}}
     {% endraw %}
+
+### raw block
+
+Raw blocks are available for templates needing to handle unprocessed mustache blocks.
+
+    {% raw %}
+    {{{{raw-helper}}}}
+      {{bar}}
+    {{{{/raw-helper}}}}
+    {% endraw %}
+
+This keeps the internal handlebars syntax untouched.
