@@ -82,3 +82,6 @@ code {
   color: #fff;
   background-color: #666;
 }
+pre {
+  background-color: #ccc;
+}
