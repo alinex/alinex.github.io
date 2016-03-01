@@ -51,7 +51,9 @@ the [General docs](http://alinex.github.io/node-alinex/).
 <h3>Applications</h3>
 
 <p><a href="http://alinex.github.io/node-dbreport/">dbreport</a>
-    tool to query database and send results as email attachements</p>
+    tool to query database and send results as email attachments</p>
+<!--<p><a href="http://alinex.github.io/node-mailman/">mailman</a>
+    management console based on email</p>-->
 <p><a href="http://alinex.github.io/node-monitor/">monitor</a>
     server application for monitoring IT systems</p>
 <p><a href="http://alinex.github.io/node-worktime/">worktime</a>
