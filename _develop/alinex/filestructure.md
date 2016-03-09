@@ -166,12 +166,13 @@ VAR Data
 The var folder contains everything that may be changed for the individual
 installations.
 
-It contains up to four sub folders:
+It contains different sub folders:
 
 - `example` - examples to be used as template for own configuration
 - `src` - the source files which will change with each update
 - `local` - local maybe changed files
 - `lib` - linked or compiled files from source overridden by local
+- `script` - additional user scripts
 
 Within these directories you will find the following possible structure:
 
@@ -207,8 +208,8 @@ __Local__
 
 __Global__
 
-    config: /etc/<app>/
-    data:   /var/lib/<app>/
+    config: /etc/<app>/config/
+    data:   /etc/<app>/data/
 
 __User__
 
