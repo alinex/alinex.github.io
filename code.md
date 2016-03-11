@@ -42,6 +42,8 @@ the [General docs](http://alinex.github.io/node-alinex/).
     async execution control for other processes</p>
 <p><a href="http://alinex.github.io/node-fs/">fs</a>
     enhancement of the node filesystem library</p>
+<!--    <p><a href="http://alinex.github.io/node-mail/">mail</a>
+        easy mail sending</p>-->
 <p><a href="http://alinex.github.io/node-server/">server</a>
     basic webserver based on express</p>
 
@@ -52,10 +54,12 @@ the [General docs](http://alinex.github.io/node-alinex/).
 
 <p><a href="http://alinex.github.io/node-dbreport/">dbreport</a>
     tool to query database and send results as email attachments</p>
-<!--<p><a href="http://alinex.github.io/node-mailman/">mailman</a>
-    management console based on email</p>-->
+<p><a href="http://alinex.github.io/node-mailman/">mailman</a>
+    management console based on email</p>
 <p><a href="http://alinex.github.io/node-monitor/">monitor</a>
     server application for monitoring IT systems</p>
+<!--    <p><a href="http://alinex.github.io/node-scripter/">scripter</a>
+        environment to make powerful scripts</p>-->
 <p><a href="http://alinex.github.io/node-worktime/">worktime</a>
     command line application for logging work times</p>
 
