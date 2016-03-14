@@ -1,7 +1,6 @@
 ---
 title: What is Alinex?
 layout: develop
-level: 1
 ---
 
 Just now it is a modular, flexible and powerful tool set for applications in the
