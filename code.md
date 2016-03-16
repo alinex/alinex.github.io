@@ -101,6 +101,7 @@ fast lookup of often used packages.
 <p><a href="https://github.com/wanasit/chrono">Chrono</a> natural language date parser</p>
 <p><a href="http://handlebarsjs.com/">handlebars</a> template engine</p>
 <p><a href="https://github.com/marcbachmann/node-html-pdf/blob/master/README.md">html-pdf</a> convert html to pdf or image using phantomjs</p>
+<p><a href="https://github.com/ashtuchkin/iconv-lite/blob/master/README.md">iconv-lite</a> easy change of encoding</p>
 <p><a href="https://github.com/zemirco/json2csv/blob/master/README.md">json2csv</a> easy converting</p>
 <p><a href="https://github.com/nodeca/js-yaml">js-yaml</a> YAML parser (to read configurations</p>
 <p><a href="http://mathjs.org/docs/index.html">mathjs</a> math library with unit support</p>
