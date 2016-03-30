@@ -115,6 +115,7 @@ fast lookup of often used packages.
 <h3>IO</h3>
 
 <p><a href="https://github.com/paulmillr/chokidar">chokidar</a> fs-watch wrapper</p>
+<p><a href="https://github.com/SBoudrias/Inquirer.js/blob/master/README.md">Inquirer</a> interactive command line user interface</p>
 <p><a href="https://github.com/felixge/node-mysql">Mysql</a> easy to use mysql library</p>
 <p><a href="http://nodemailer.com/">nodemail</a> sending emails</p>
 <p><a href="https://github.com/flatiron/prompt/">Prompt</a> easy and beautiful command-line prompt</p>
