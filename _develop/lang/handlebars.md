@@ -185,7 +185,7 @@ be rendered if the expression returns a falsy value.
 
 ### each block
 
-You can iterate over a list using this. Inside the block, you can use `this` to
+You can iterate over a **list** using this. Inside the block, you can use `this` to
 reference the element being iterated over.
 
     {% raw %}
@@ -237,6 +237,8 @@ anywhere in the block:
       {{/each}}
     {{/each}}
     {% endraw %}
+
+> It is not usable on objects, only on lists or lists of objects.
 
 ### with block
 
