@@ -8,7 +8,8 @@ Node.JS
 
 This modules are written in CoffeeScript but are already compiled to JavaScript
 in the NPM download package. So no need to worry if you aren't familiar with
-CoffeeScript.
+CoffeeScript. All my module name's has alinex as a namespace prefix and often use
+some other alinex modules. But that shouldn't prevent you to use it elsewhere.
 
 To get more information about the code, style and development guidelines see
 the [General docs](http://alinex.github.io/node-alinex/).
@@ -84,9 +85,9 @@ fast lookup of often used packages.
 <p><a href="https://github.com/visionmedia/debug/blob/master/Readme.md">debug</a> life debugging</p>
 <p><a href="https://github.com/pgte/carrier">carrier</a> stream line reader</p>
 <p><a href="https://github.com/chalk/chalk/blob/master/readme.md">chalk</a> terminal string styling</p>
+<p><a href="http://mathjs.org/docs/index.html">mathjs</a> math library with unit support</p>
 <p><a href="https://github.com/medikoo/memoize">Memoizee</a> make a function or method using cache for results</p>
 <p><a href="https://github.com/cho45/named-regexp.js/blob/master/README.md">named-regexp</a> named capture feature for RegExp</p>
-<p><a href="https://github.com/flatiron/prompt/blob/master/README.md">prompt</a> command line prompt</p>
 
 <h3>Development</h3>
 
@@ -102,9 +103,9 @@ fast lookup of often used packages.
 <p><a href="http://handlebarsjs.com/">handlebars</a> template engine</p>
 <p><a href="https://github.com/marcbachmann/node-html-pdf/blob/master/README.md">html-pdf</a> convert html to pdf or image using phantomjs</p>
 <p><a href="https://github.com/ashtuchkin/iconv-lite/blob/master/README.md">iconv-lite</a> easy change of encoding</p>
+<p><a href="https://github.com/mashpie/i18n-node/blob/master/README.md">i18n</a> simple translation module</p>
 <p><a href="https://github.com/zemirco/json2csv/blob/master/README.md">json2csv</a> easy converting</p>
 <p><a href="https://github.com/nodeca/js-yaml">js-yaml</a> YAML parser (to read configurations</p>
-<p><a href="http://mathjs.org/docs/index.html">mathjs</a> math library with unit support</p>
 <p><a href="https://markdown-it.github.io/">markdown-it</a> convert markdown to html</p>
 <p><a href="http://momentjs.com/docs/">moment</a> parse and manipulate dates and times</p>
 <p><a href="https://github.com/Leonidas-from-XIV/node-xml2js">xml2js</a> Conversion from simple XML to JavaScript objects</p>
