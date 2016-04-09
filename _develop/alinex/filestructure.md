@@ -53,11 +53,11 @@ listed with the states to which it belongs:
 
 ``` text
 bin           // all
-coverage      // development
 doc           // development
 lib           // development, ...
 man           // development, ...
 node_modules  // development, ...
+report        // development
 src           // source, development
 test          // source, development
 var           // source, ...
@@ -84,7 +84,7 @@ This stage contains the following directories:
 bin           // executable files
 src           // source code
   doc         // general documentation which won't belong to any specific file
-  man         // sources for manpages
+  man         // sources for man pages
 test          // test data and test suites
   data        // test data
   mocha       // mocha test suites
@@ -108,11 +108,11 @@ This stage contains the following directories:
 
 ``` text
 bin           // executable files
-coverage      // coverage report from tests
 doc           // created documentation (optional)
 lib           // copied/compiled code
 man           // created man pages
 node_modules  // npm installed packages
+report        // development
 src           // source code
 test          // test data and test suites
 var           // data and code which maybe changed in installation

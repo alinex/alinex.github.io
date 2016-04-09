@@ -20,14 +20,15 @@ reading problematic and also are not suited for coffee script if mixed with
 spaces.
 
 
-Variables
+Naming
 -------------------------------------------------
+### Variables
+
 Over all modules some common variable names will be used for the same values:
 
 - `cb` - for the callback method
 - `done` - alternatively used for the callback for better reading
-- `err` - for an error message object
-- `ex` - mostly the exception in a `try...catch` block
+- `err` or `error` - for an error message object
 
 Classes start with an Uppercase letter:
 
@@ -39,6 +40,16 @@ To mark private properties/functions they may start with an underscore.
 
 Modules are always imported into a variable which is named after the module
 and if the module exports a class the uppercase name is used.
+
+### Classes and Instances
+
+Classes are written starting with uppercase letter while it's instances start with
+lowercase letters.
+
+### Constants
+
+They are used seldom but if so you have to name it completely in uppercase with
+underscores for word separator.
 
 
 Asynchronous code
@@ -163,6 +174,28 @@ node-inspector
 node --debug-brk lib/cli.js -v
 ```
 
+But additionally the `debug` package is used in all packages to make it possible
+to debug any time, also in the production code to get more information.
+
+``` coffee
+debug = require('debug') 'mypack'
+debug "the system is running"
+```
+
+You instantiate a new debug instance after requiring it eith a name. This should
+be your package name (for the main part). For subparts of your package add a colon
+with a specifier like 'mypack:reader' or 'mypack:writer:html'.
+
+If you run the code above normally nothing will happen but if you set the `DEBUG`
+environment variable like:
+
+``` bash
+DEBUG=mypack node lib/index.js
+```
+
+You will get the debug output. You can add multiple debug packages with colon or
+use asterisk like 'mypack*' to select the package with all sublevel.
+
 
 Testing
 -------------------------------------------------
@@ -172,6 +205,9 @@ the style and the above conventions of the styleguide.
 Mocha unit tests are used to check individual parts and the overall
 functionality. As much as possible should be tested but not only single units
 but all interface calls. An test coverage of 100% should be the goal.
+
+If used the [builder](http://alinex.github.io/node-builder) will call them
+with `builder -c test` for you.
 
 
 Publishing
@@ -190,10 +226,10 @@ The tasks are done in an easy way using the
 [alinex-builder](http://alinex.github.io/node-builder).
 
 ``` bash
-# step 1-3
-builder -c clean --auto -c update
-# step 4-7
-builder -c test -c publish --minor -c doc --publish
+# check what is changed and if all packages are up-to-date
+builder -c changes
+# do the steps 1-7
+builder -c publish --minor
 ```
 
 Configuration
