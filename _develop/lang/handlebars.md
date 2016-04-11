@@ -25,7 +25,7 @@ Read more on the following pages:
 
 
 Expression Syntax
-===================================================================
+-------------------------------------------------------------------
 The Handlebars Expressions like seen above are written like (a double stash before,
 followed with the content to be evaluated, followed by a closing double stash): 
 
@@ -137,7 +137,7 @@ We can use the parent path ../ to get the groupName property:
 
 
 Built-In Helpers
-=======================================================================
+-------------------------------------------------------------------
 
 ### if block
 
@@ -286,3 +286,9 @@ Raw blocks are available for templates needing to handle unprocessed mustache bl
     {% endraw %}
 
 This keeps the internal handlebars syntax untouched.
+
+
+Alinex Helpers
+-------------------------------------------------------------------
+If handlebars are used through the [validator](http://alinex.github.io/node-validator/README.md.html#handlebars)
+a lot more and powerful helpers are available.

@@ -49,6 +49,50 @@ if !~message.indexOf 'test'
 ```
 
 
+Existence Operator
+-------------------------------------------------
+A very handy operator is the existence operator '?' which can be used to prevent
+errors with accessing methods of undefinede:
+
+``` coffee
+x = table?.row?['col1']?[0] ? '-'
+```
+
+In the above example it is used multiple times to check for existence in each
+level. So if any of the table, row, 'col1', element [0] didn't exist the first part will
+be set to undefined. The standalone existence operator after that will set a
+x to a devfault value if the first part is not defined or null.
+
+
+Arrays
+-------------------------------------------------
+A very handy thing with arrays is the command concatenation used like:
+
+``` coffee
+console.log text.split /\n/
+.filter (l) -> l[0] isnt '#'
+.map (l) ->
+  l.split /\s*,\s*/
+  .filter (e) -> e?
+  .map (e) -> e.replace '\t', '\\t'
+  .join '\t'
+.join '\n'
+```
+
+In the above example a multiline text is
+
+- split in lines
+- filtered, so that lines starting with '#' are excluded
+- then the line is splitted on ',' with surrounding whitespace
+- empty columns will be removed
+- the tabs within columns will be masked
+- then the columns will be joined with tab separator
+- and the lines will be joined together again
+
+This example shows how a complete data structure is parsed, optimized and put together
+in an optimized form.
+
+
 Objects
 -------------------------------------------------
 
@@ -81,7 +125,7 @@ try {
 ```
 
 
-For loops
+Loops
 -------------------------------------------------
 
 Loop over array:
