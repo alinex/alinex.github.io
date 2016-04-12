@@ -103,3 +103,41 @@ Use the preset names:
 
     git pull origin master
     git push origin master
+
+
+Subversion Integration
+-------------------------------------------------
+If you have a subversion server as master you may also use git for your work and
+sync the changes back to subversion as the master repository.
+
+To use this you have to install the extension:
+
+``` bash
+apt-get install git-svn
+```
+
+To do so you first init your git repository from the subversion master and load
+the initial data:
+
+``` bash
+git svn clone -s https://github.com/alinex/my-repo
+# -s is for --stdlayout which presumes the svn recommended layout for tags, trunk, and branches
+```
+
+If you don't want the complete history you may use:
+``` bash
+git svn clone -s -r 40000:HEAD https://github.com/alinex/my-repo
+# -r is for the revision to start taking history from
+```
+
+To update your repository to HEAD of subversion master run:
+
+``` bash
+git svn rebase
+```
+
+And to push your commits further to subversion:
+
+``` bash
+git svn dcommit
+```
