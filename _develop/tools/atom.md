@@ -99,7 +99,13 @@ Editing
 
 - `Alt-Shift-Up` / `Alt-Shift-Down` adds another cursor one line above/below
 - `Strg-Click` add or remove another cursor
+- `Strg-D` / `Strg-U` ad and remove cursor at the next match of selected word
 - `ESC` to remove multi cursor and go back to a single one
+
+Maybe extend the keymapping with the following:
+
+    '.platform-linux atom-text-editor':
+      'shift-alt-L': 'editor:split-selections-into-lines'
 
 
 Code Specific Helpers
