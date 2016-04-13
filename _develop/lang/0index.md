@@ -11,3 +11,9 @@ The descriptions are neither a complete introduction so better learn the
 language's basics from the original sites, first. After that the following
 descriptions will show you my thoughts of it which sometimes may be only#
 personal but often common sense.
+
+- [CoffeeScript](coffee.html)
+- [Handlebars Templates](handlebars.html)
+- [JavaScript](javascript.html)
+- [Markdown Syntax](markdown.html)
+- [Node.JS](nodejs.html)

@@ -14,7 +14,7 @@ had little till no support for CoffeeScript, Jade and other modern dialects.
 So you may use some generic IDEs like Eclipse or NetBeans with less support or
 some simpler Editors which often at least has a working syntax highlighting.
 
-I for myself used Sublime_Text a longer time but switched to Atom, now:
+I for myself used Sublime_Text some time but switched to Atom:
 
 - [Sublime_Text](sublime.html)
 - [Atom](atom.html)

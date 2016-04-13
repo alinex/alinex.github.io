@@ -390,3 +390,17 @@ becomes
 ![Alinex Logo][id]
 
 [id]: logo-trans-200.png "ALINEX"
+
+
+Extended Markdown
+=======================================================
+Within the [report](http://alinex.github.io/node-report) package an extended
+version of marksown conversion is used supporting all of the above but also
+
+- boxes
+- emoji
+- special styles
+- table of contents
+- footnotes
+- acronyms
+- and more

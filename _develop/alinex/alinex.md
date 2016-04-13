@@ -7,6 +7,8 @@ Just now it is a modular, flexible and powerful tool set for applications in the
 backend and frontend. It aims to help the developer to create individual solutions
 in a fast and easy but stable way.
 
+It is used in production for it operations and maintenance.
+
 
 Why I created it?
 -------------------------------------------------
@@ -51,10 +53,10 @@ There is no real roadmap for the time and functionality. It all depends on my
 personal time and interests. But I will give a short overview of the big
 points, what is planned for this year:
 
-- hardening base modules
 - optimizing documentation
 - more applications
 - make the server module usable
+- rest applications
 
 See the [Planning Board](https://trello.com/b/lOY5hCx7/node-js) for more up to
 date information of there I'm working at.
