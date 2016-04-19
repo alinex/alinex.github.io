@@ -41,6 +41,16 @@ To mark private properties/functions they may start with an underscore.
 Modules are always imported into a variable which is named after the module
 and if the module exports a class the uppercase name is used.
 
+### Requirements
+
+Generally required modules belong on top of the file. But all things which will
+be required at the top will imediately load and slow down the initialization. Often
+some of these requirements won't be needed in every call. So it is better to load
+them dynamically then needed.
+
+To optimize readability the variables for dynamically loaded requirement will be
+set on top and the real requirement can be put anythere in the code.
+
 ### Classes and Instances
 
 Classes are written starting with uppercase letter while it's instances start with
