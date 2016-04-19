@@ -22,6 +22,8 @@ the [General docs](http://alinex.github.io/node-alinex/).
     asynchronous control flow</p>
 <p><a href="http://alinex.github.io/node-builder/">builder</a>
     a built tool to help while developing</p>
+<p><a href="http://alinex.github.io/node-handlebars/">handlebars</a>
+    helper collection for handlebars templates</p>
 <p><a href="http://alinex.github.io/node-report/">report</a>
     easy report generation using markdown</p>
 <p><a href="http://alinex.github.io/node-sshtunnel/">sshtunnel</a>
@@ -45,6 +47,8 @@ the [General docs](http://alinex.github.io/node-alinex/).
     enhancement of the node filesystem library</p>
 <p><a href="http://alinex.github.io/node-mail/">mail</a>
     easy mail sending</p>
+<p><a href="http://alinex.github.io/node-media/">media</a>
+    media file analyzation and manipulation</p>
 <p><a href="http://alinex.github.io/node-server/">server</a>
     basic webserver based on express</p>
 
@@ -89,11 +93,6 @@ fast lookup of often used packages.
 <p><a href="https://github.com/medikoo/memoize">Memoizee</a> make a function or method using cache for results</p>
 <p><a href="https://github.com/cho45/named-regexp.js/blob/master/README.md">named-regexp</a> named capture feature for RegExp</p>
 
-<h3>Development</h3>
-
-<p><a href="http://mochajs.org/">mocha</a> simple, flexible test tool</p>
-<p><a href="http://chaijs.com/">chai</a> assertion library that can be paired with mocha</p>  
-
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
@@ -123,6 +122,15 @@ fast lookup of often used packages.
 <p><a href="https://github.com/request/request/blob/master/README.md">request</a> simple http/https requests</p>
 <p><a href="https://github.com/flatiron/winston/">Winston</a> extensible multi-transport async logging library</p>
 <p><a href="http://yargs.js.org/docs/index.html">yargs</a> parsing option strings from the commandline</p>
+
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+
+<h3>Development</h3>
+
+<p><a href="http://coffeescript.org/">coffeescript</a> compiler into javascript</p>  
+<p><a href="http://chaijs.com/">chai</a> assertion library that can be paired with mocha</p>  
+<p><a href="http://mochajs.org/">mocha</a> simple, flexible test tool</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
