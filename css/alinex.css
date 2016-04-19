@@ -58,9 +58,7 @@ a[href^="https://alinex.github.io/node-"],
   font-family: 'Xcelsion';
 }
 
-@media print
 a[href]:after {
-    content: " (" attr(href) ")";
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
