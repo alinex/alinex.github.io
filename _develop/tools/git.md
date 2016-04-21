@@ -9,7 +9,7 @@ Read more on the following pages:
 {:toc}
 
 
-Setup
+Client Setup
 -------------------------------------------------
 
 ### Configure default user
@@ -36,6 +36,76 @@ Note: While this is convenient, Git will store your credentials in clear text
 in a local file (.git-credentials) under your "home" directory
 
 
+Server Setup
+--------------------------------------------------
+
+Install the required package:
+
+    sudo apt-get install -y git-core
+
+### Authenticated ssh access
+
+Next you create a local user to access git using ssh:
+
+    sudo adduser git
+    su git
+    cd
+    mkdir .ssh && chmod 700 .ssh
+    touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
+
+Next you need to add each developer SSH public keys to the authorized_keys file
+for the git user.
+
+    cat /tmp/id_rsa.john.pub >> ~/.ssh/authorized_keys
+
+Now, you can set up an empty repository for them as described below.
+
+> The address will be git@gitserver:/var/git/project.git
+
+You can easily restrict the git user to only doing Git activities with a limited
+shell tool called git-shell that comes with Git.
+
+    cat /etc/shells   # see if `git-shell` is already in there.  If not...
+    which git-shell   # make sure git-shell is installed on your system.
+    sudo vim /etc/shells  # and add the path to git-shell from last command
+    sudo chsh git  # and enter the path to git-shell, usually: /usr/bin/git-shell
+
+Now, the git user can only use the SSH connection to push and pull Git repositories
+and can’t shell onto the machine. If you try, you’ll see a login rejection like this:
+
+    ssh git@gitserver
+    fatal: Interactive git shell is not enabled.
+    Connection to gitserver closed.
+
+### Http Access
+
+This is done using the apache webserver with its possibilities.
+
+Add the following to the apache site configuration:
+
+    SetEnv GIT_PROJECT_ROOT /var/git
+    SetEnv GIT_HTTP_EXPORT_ALL
+    ScriptAlias /git/ /usr/lib/git-core/git-http-backend/
+
+    <Directory "/usr/lib/git-core*">
+       Options ExecCGI Indexes
+       Order allow,deny
+       Allow from all
+       Require all granted
+    </Directory>
+
+    <LocationMatch "^/git/">
+        AuthType Basic
+        AuthName "Git Access"
+        AuthUserFile /etc/apache2/git.passwd
+        Require valid-user
+    </LocationMatch>
+
+Now you may access the server using:
+
+> git clone http://<user>:<pass>@<server>/var/git/<repo>
+
+
 Create a new server repository
 -------------------------------------------------
 
@@ -45,7 +115,7 @@ First create a bare repository:
     cd myrepo
     git --bare update-server-info
     cd ..
-    chown -R www-data:www-data myrepovi
+    chown -R www-data:www-data myrepo
 
 Now make a new local repository:
 
