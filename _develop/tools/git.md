@@ -98,12 +98,18 @@ Add the following to the apache site configuration:
         AuthType Basic
         AuthName "Git Access"
         AuthUserFile /etc/apache2/git.passwd
+        AuthGroupFile /etc/apache2/git.groups
         Require valid-user
     </LocationMatch>
 
 Now you may access the server using:
 
 > git clone http://<user>:<pass>@<server>/var/git/<repo>
+
+### Web Interface gitweb
+
+    apt-get install -y gitweb
+
 
 
 Create a new server repository
