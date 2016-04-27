@@ -16,9 +16,8 @@ The exit codes in C/C++ which are in the kernel can be also found in:
     /usr/include/asm-generic/errno-base.h
     /usr/include/asm-generic/errno.h
 
-cat /usr/include/asm-generic/errno-base.h /usr/include/asm-generic/errno.h | grep define | sed -r 's/.*\t([0-9]+)\t\/\* (.*) \*\//| \1 | \2 |/g'
+    cat /usr/include/asm-generic/errno-base.h /usr/include/asm-generic/errno.h | grep define | sed -r 's/.*\t([0-9]+)\t\/\* (.*) \*\//| \1 | \2 |/g'
 
-| ---- | --------------------------------------- |
 | Code | Description                             |
 | ----:| --------------------------------------- |
 |    0 | OK - no error            |
