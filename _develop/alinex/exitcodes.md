@@ -18,6 +18,7 @@ The exit codes in C/C++ which are in the kernel can be also found in:
 
 cat /usr/include/asm-generic/errno-base.h /usr/include/asm-generic/errno.h | grep define | sed -r 's/.*\t([0-9]+)\t\/\* (.*) \*\//| \1 | \2 |/g'
 
+| ---- | --------------------------------------- |
 | Code | Description                             |
 | ----:| --------------------------------------- |
 |    0 | OK - no error            |
@@ -154,6 +155,7 @@ cat /usr/include/asm-generic/errno-base.h /usr/include/asm-generic/errno.h | gre
 | 131 | State not recoverable |
 | 132 | Operation not possible due to RF-kill |
 | 133 | Memory page has hardware error |
+| ---- | --------------------------------------- |
 
 
 Unix Bash
@@ -162,12 +164,11 @@ Unix Bash
 The exit codes are arranged alongside the UNIX default:
 
 
+| ---- | --------------------------------------- |
 | Code | Description                             |
 | ----:| --------------------------------------- |
 |    0 | OK - no error                           |
 |    1 | General error which should not occur    |
-|    2 | Missuse: Missing keyword or command or permission problem |
-|    6 | No such device or address               |
 |  124 | command times out                       |
 |  125 | if a command itself fails               |
 |  126 | Command invoked cannot execute          |
@@ -179,6 +180,7 @@ The exit codes are arranged alongside the UNIX default:
 |  134 | SIGABRT or SIGIOT (Signal 6)            |
 |  143 | SIGTERM (Signal 15)                     |
 |  255 | Exit status out of range                |
+| ---- | --------------------------------------- |
 
 The codes from 2 - 125 are command specific, here you should look into the
 manpage for an explanation. But some have a most common use.
@@ -190,18 +192,12 @@ Alinex Generals
 The alinex tools are based on the bash exit codes. In addition to the above
 some alinex common codes are set like:
 
+| ---- | --------------------------------------- |
 | Code | Description                             |
 | ----:| --------------------------------------- |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
+|    2 | Command parameter problem               |
+|    3 | File system access problem              |
+|    4 | Network problems                        |
+|    5 | Service or system access problem        |
+|    6 | No such service or address              |
+| ---- | --------------------------------------- |
