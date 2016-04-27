@@ -99,6 +99,8 @@ tr:nth-child(even) {
 th {
   border: 1px solid #666;
   font-weight: bold;
+  padding: 2px 8px;
+  background-color: #666
 }
 td {
   border: 1px solid #666;
