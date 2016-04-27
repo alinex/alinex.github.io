@@ -89,3 +89,17 @@ code {
 pre {
   background-color: #ccc;
 }
+
+table {
+  border: 1px solid #666;
+}
+tr:nth-child(even) {
+  background: #666;
+}
+th {
+  border: 1px solid #999;
+  font-weight: bold;
+}
+td {
+  border: 1px solid #666;
+}
