@@ -172,7 +172,6 @@ It contains different sub folders:
 - `src` - the source files which will change with each update
 - `local` - local maybe changed files
 - `lib` - linked or compiled files from source overridden by local
-- `script` - additional user scripts
 
 Within these directories you will find the following possible structure:
 
@@ -181,6 +180,8 @@ config        // configuration
 htdocs        // for webserver
   <theme>     // or use 'default'
 locale        // localization
+script        // user scripts
+template      // templates
 ```
 
 Templates and statics will be compiled from `local` or `src` to `lib`. This is done:
