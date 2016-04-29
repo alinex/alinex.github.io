@@ -18,10 +18,10 @@ the [General docs](http://alinex.github.io/node-alinex/).
   <div class="col-md-4 col-sm-6 col-xs-12">
 
 <h3>General Helpers</h3>
-<p><a href="http://alinex.github.io/node-async/">async</a>
-    asynchronous control flow</p>
 <p><a href="http://alinex.github.io/node-builder/">builder</a>
     a built tool to help while developing</p>
+<p><a href="http://alinex.github.io/node-alinex/">core</a>
+    application basics</p>
 <p><a href="http://alinex.github.io/node-handlebars/">handlebars</a>
     helper collection for handlebars templates</p>
 <p><a href="http://alinex.github.io/node-report/">report</a>
@@ -118,7 +118,6 @@ fast lookup of often used packages.
 <p><a href="https://github.com/SBoudrias/Inquirer.js/blob/master/README.md">Inquirer</a> interactive command line user interface</p>
 <p><a href="https://github.com/felixge/node-mysql">Mysql</a> easy to use mysql library</p>
 <p><a href="http://nodemailer.com/">nodemail</a> sending emails</p>
-<p><a href="https://github.com/flatiron/prompt/">Prompt</a> easy and beautiful command-line prompt</p>
 <p><a href="https://github.com/request/request/blob/master/README.md">request</a> simple http/https requests</p>
 <p><a href="https://github.com/flatiron/winston/">Winston</a> extensible multi-transport async logging library</p>
 <p><a href="http://yargs.js.org/docs/index.html">yargs</a> parsing option strings from the commandline</p>

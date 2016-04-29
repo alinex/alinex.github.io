@@ -188,11 +188,11 @@ Alinex Generals
 ------------------------------------------------------
 
 The alinex tools are based on the bash exit codes. In addition to the above
-some alinex common codes are set like:
+some alinex common codes are set in the range 16-120 like:
 
 | Code | Description                             |
 | ----:| --------------------------------------- |
-|      |                                         |
+|   16 | Setup Problem                           |
 |      |                                         |
 |      |                                         |
 |      |                                         |
