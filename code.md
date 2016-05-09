@@ -98,6 +98,7 @@ fast lookup of often used packages.
 
 <h3>Format</h3>
 
+<p><a href="https://github.com/cheeriojs/cheerio">cheerio</a> html parser with easy jQuery like access</p>
 <p><a href="https://github.com/wanasit/chrono">Chrono</a> natural language date parser</p>
 <p><a href="http://handlebarsjs.com/">handlebars</a> template engine</p>
 <p><a href="https://github.com/marcbachmann/node-html-pdf/blob/master/README.md">html-pdf</a> convert html to pdf or image using phantomjs</p>
