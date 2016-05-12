@@ -217,3 +217,19 @@ And to push your commits further to subversion:
 ``` bash
 git svn dcommit
 ```
+
+Working with forks
+------------------------------------------------------------
+If you have a fork you may add an additional remote repository:
+
+``` bash
+git remote add upstream
+```
+
+To sync this you have to:
+
+``` bash
+git fetch upstream
+git checkout master
+git merge upstream/master
+```
