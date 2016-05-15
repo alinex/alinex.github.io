@@ -53,6 +53,8 @@ the [General docs](http://alinex.github.io/node-alinex/).
     media file analyzation and manipulation</p>
 <p><a href="http://alinex.github.io/node-server/">server</a>
     basic webserver based on express</p>
+<p><a href="http://alinex.github.io/node-table/">table</a>
+    working with table like data</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
