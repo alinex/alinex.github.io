@@ -28,6 +28,8 @@ the [General docs](http://alinex.github.io/node-alinex/).
     easy report generation using markdown</p>
 <p><a href="http://alinex.github.io/node-sshtunnel/">sshtunnel</a>
     ssh port tunneling made easy</p>
+<p><a href="http://alinex.github.io/node-table/">table</a>
+    working with table like data</p>
 <p><a href="http://alinex.github.io/node-util/">util</a>
     different smaller helpers for string, array and objects</p>
 <p><a href="http://alinex.github.io/node-validator/">validator</a>
@@ -53,8 +55,6 @@ the [General docs](http://alinex.github.io/node-alinex/).
     media file analyzation and manipulation</p>
 <p><a href="http://alinex.github.io/node-server/">server</a>
     basic webserver based on express</p>
-<p><a href="http://alinex.github.io/node-table/">table</a>
-    working with table like data</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
