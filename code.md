@@ -113,7 +113,7 @@ fast lookup of often used packages.
 <p><a href="https://markdown-it.github.io/">markdown-it</a> convert markdown to html</p>
 <p><a href="http://momentjs.com/docs/">moment</a> parse and manipulate dates and times</p>
 <p><a href="https://github.com/Leonidas-from-XIV/node-xml2js">xml2js</a> Conversion from simple XML to JavaScript objects</p>
-
+<p><a href="http://pdfkit.org/">pdfkit</a> pdf creation toolkit</p>
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
