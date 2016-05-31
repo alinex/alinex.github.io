@@ -194,25 +194,9 @@ some alinex common codes are set in the range 16-120 like:
 | ---- | --------------------------------------- |
 | Code | Description                             |
 | ----:| --------------------------------------- |
-<<<<<<< HEAD
-|   16 | Setup Problem                           |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-|      |                                         |
-=======
 |    2 | Command parameter problem               |
 |    3 | File system access problem              |
 |    4 | Network problems                        |
 |    5 | Service or system access problem        |
 |    6 | No such service or address              |
 | ---- | --------------------------------------- |
->>>>>>> b012102f77b497dec09397fba309bc1ee227c459
