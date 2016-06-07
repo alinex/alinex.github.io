@@ -45,7 +45,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
     wrapper module supporting mysql and more</p>
 <p><a href="http://alinex.github.io/node-exec/">exec</a>
     async execution control for other processes</p>
-<p><a href="http://alinex.github.io/node-formatter/">formatter</a>
+<p><a href="http://alinex.github.io/node-format/">format</a>
     easy serialization and deserialization of data objects</p>
 <p><a href="http://alinex.github.io/node-fs/">fs</a>
     enhancement of the node filesystem library</p>
