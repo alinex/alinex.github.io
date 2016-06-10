@@ -90,6 +90,7 @@ fast lookup of often used packages.
 <h3>General Tools</h3>
 
 <p><a href="https://github.com/caolan/async/blob/master/README.md">async</a> easy asynchronous calls</p>
+<p><a href="https://github.com/abbr/deasync">deasync</a> run async functions synchron</p>
 <p><a href="https://github.com/visionmedia/debug/blob/master/Readme.md">debug</a> life debugging</p>
 <p><a href="https://github.com/pgte/carrier">carrier</a> stream line reader</p>
 <p><a href="https://github.com/chalk/chalk/blob/master/readme.md">chalk</a> terminal string styling</p>
