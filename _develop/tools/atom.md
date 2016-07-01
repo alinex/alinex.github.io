@@ -35,9 +35,10 @@ Plugins I Use
 - minimap-highlight-selected - and show also in minimap
 - markdown-pdf - transform markdown into pdf
 - pdf-view - view pdf files inline
+- atom-html-preview - show any html in a tab
 - keybinding-cheatsheet - display possible keys
 - export-html - to view any code in the browser and maybe print it
-- open-html-in-browser - to open html from the project tree
+- open-in-browser - to open html from the project tree
 
 ### Programming
 
