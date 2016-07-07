@@ -90,6 +90,7 @@ fast lookup of often used packages.
 <h3>General Tools</h3>
 
 <p><a href="https://github.com/caolan/async/blob/master/README.md">async</a> easy asynchronous calls</p>
+<p><a href="https://github.com/abbr/deasync">deasync</a> run async functions synchron</p>
 <p><a href="https://github.com/visionmedia/debug/blob/master/Readme.md">debug</a> life debugging</p>
 <p><a href="https://github.com/pgte/carrier">carrier</a> stream line reader</p>
 <p><a href="https://github.com/chalk/chalk/blob/master/readme.md">chalk</a> terminal string styling</p>
@@ -132,7 +133,7 @@ fast lookup of often used packages.
 
 <h3>Development</h3>
 
-<p><a href="http://coffeescript.org/">coffeescript</a> compiler into javascript</p>  
+<p><a href="http://coffeescript.org/">CoffeeScript</a> a language that compiles into JavaScript but is easier to read and write</p>
 <p><a href="http://chaijs.com/">chai</a> assertion library that can be paired with mocha</p>  
 <p><a href="https://github.com/bnoordhuis/node-heapdump">HeapDump</a> create a heapdump to analyze using Chrome</p>
 <p><a href="http://mochajs.org/">mocha</a> simple, flexible test tool</p>
@@ -142,7 +143,6 @@ fast lookup of often used packages.
 
 <h3>Applications</h3>
 
-<p><a href="http://coffeescript.org/">CoffeeScript</a> a language that compiles into JavaScript but is easier to read and write</p>
 <p><a href="http://pm2.keymetrics.io/docs/usage/cluster-mode/">pm2</a> production process manager</p>
 
 </div>
