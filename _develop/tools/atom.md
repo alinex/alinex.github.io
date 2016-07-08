@@ -47,6 +47,7 @@ Plugins I Use
 - language-plantuml - with syntax highlighting
 - plantuml-preview - and preview on save
 - todo-show - opens a pane for all todos
+- split-diff - shows visual diff between split panes
 
 ### CoffeeScript
 
