@@ -6,7 +6,7 @@ layout: develop
 Since I use sublime text as editor more and more, here some tips and tricks
 I found helpful at work.
 
-Read more on the following pages:
+Read more on the following topics:
 
 * TOC
 {:toc}

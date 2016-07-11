@@ -5,7 +5,7 @@ layout: develop
 
 Short description of how to best work with npm.
 
-Read more on the following pages:
+Read more on the following topics:
 
 * TOC
 {:toc}
