@@ -146,3 +146,7 @@ To finish the setup you need to add the following to the `~/.atom/config.cson`:
 
 As help for the syntax you may look at the
 [PlantUML Homepage](http://plantuml.com/sequence.html)
+
+### Plantuml-viewer
+
+This is another plugin which allows live display while editing. Open it using `Ctrl-Alt-P`
