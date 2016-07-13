@@ -20,8 +20,10 @@ the [General docs](http://alinex.github.io/node-alinex/).
 <h3>General Helpers</h3>
 <p><a href="http://alinex.github.io/node-builder/">builder</a>
     a built tool to help while developing</p>
+<p><a href="http://alinex.github.io/node-codedoc/">codedoc</a>
+    a tool to extract documentation out of code</p>
 <p><a href="http://alinex.github.io/node-alinex/">core</a>
-    application basics</p>
+    application basics (internal only)</p>
 <p><a href="http://alinex.github.io/node-handlebars/">handlebars</a>
     helper collection for handlebars templates</p>
 <p><a href="http://alinex.github.io/node-report/">report</a>
