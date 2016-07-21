@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Version changes</title>
+    <title>Templates</title>
     <meta name="HandheldFriendly" content="true" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -70,197 +70,121 @@
           </script>
           <gcse:searchresults-only></gcse:searchresults-only>
           <p><ul class="table-of-contents" aria-hidden="true"><header>Index</header>
-<li><a href="#version-052-2016-07-21">Version 0.5.2 (2016-07-21)</a></li>
-<li><a href="#version-051-2016-07-21">Version 0.5.1 (2016-07-21)</a></li>
-<li><a href="#version-050-2016-07-21">Version 0.5.0 (2016-07-21)</a></li>
-<li><a href="#version-040-2016-07-20">Version 0.4.0 (2016-07-20)</a></li>
-<li><a href="#version-033-2016-07-19">Version 0.3.3 (2016-07-19)</a></li>
-<li><a href="#version-032-2016-07-19">Version 0.3.2 (2016-07-19)</a></li>
-<li><a href="#version-031-2016-07-19">Version 0.3.1 (2016-07-19)</a></li>
-<li><a href="#version-030-2016-07-19">Version 0.3.0 (2016-07-19)</a></li>
-<li><a href="#version-021-2016-07-15">Version 0.2.1 (2016-07-15)</a></li>
-<li><a href="#version-020-2016-07-15">Version 0.2.0 (2016-07-15)</a></li>
-<li><a href="#version-012-2016-07-15">Version 0.1.2 (2016-07-15)</a></li>
-<li><a href="#version-011-2016-07-12">Version 0.1.1 (2016-07-12)</a></li>
-<li><a href="#version-010-2016-07-11">Version 0.1.0 (2016-07-11)</a></li>
+<li><a href="#html-template">HTML Template</a></li>
+<li><a href="#css-stylesheet">CSS Stylesheet</a>
+<ul>
+<li><a href="#preprocessor">Preprocessor</a></li>
+</ul>
+</li>
 <li class="sidebar"><a href="#further-pages">Further Pages</a></li></ul>
-</p><h1 id="version-changes">Version changes</h1>
-<p>The following list gives a short overview about what is changed between
-individual versions:</p>
-<h2 id="version-052-2016-07-21">Version 0.5.2 (2016-07-21)</h2>
+</p><h1 id="templates">Templates</h1>
+<p>As described in the <a href="../README.md.html#Usage">Usage</a> and <a href="man/codedoc1.md.html">Manpage</a>
+you may not only select a predefined template but also add your own.</p>
+<p>The template consists of two parts:</p>
 <ul>
-<li>Update alinex-report@2.1.8</li>
-<li>Position toc header.</li>
-<li>Add table of contents link for further pages.</li>
-<li>Be even more verbose.</li>
-<li>Allow verbose settings.</li>
-<li>Fix copy resource job.</li>
-<li>Scrollbars only vertical in toc.</li>
-<li>Update documentation.</li>
-<li>Optimize debug support.</li>
-<li>Bug: Sometimes not reaching finished state and without error.</li>
+<li>the HTML Template - defining the page structure</li>
+<li>the CSS Stylesheet - style up everything to your liking</li>
 </ul>
-<h2 id="version-051-2016-07-21">Version 0.5.1 (2016-07-21)</h2>
+<p>Maybe you need also some third party resources like Bootstrap or jQuery. This won’t
+be included in your documentation. Often you can use them from some CDN (Content
+Delivery Network) which will be faster.</p>
+<h2 id="html-template">HTML Template</h2>
+<p>The template is a basic HTML with <a href="http://alinex.github.io/develop/lang/handlebars.html">Handlebars</a>
+markup language and the <a href="http://alinex.github.io/node-handlebars/README.md.html">alinex-handlebars</a>
+extension.</p>
+<p>Within the template you may use the following variables:</p>
 <ul>
-<li>Fix line numbers in code.</li>
-<li>Fixed duplicate view of API comments.</li>
-<li>Optimize table-of-contents style.</li>
-<li>Fix link in index page.</li>
-</ul>
-<h2 id="version-050-2016-07-21">Version 0.5.0 (2016-07-21)</h2>
+<li><strong>title</strong> - page title
+This is meant for the header within the title: <code>&lt;title&gt;{{title}}&lt;/title</code>.</li>
+<li><strong>locale</strong> - language setting
+You may use this in the html-tag: <code>&lt;html lang=&quot;{{locale}}&quot;&gt;</code></li>
+<li><strong>header</strong>  - additional header tags
+This is a collection of tags for the header like scripts or style includes. They
+are collected while creating the html, add them in the head-tag as: <code>{{{join header &quot;&quot;}}}</code></li>
+<li><strong>content</strong> - the main part
+The content is a string of html therefore you have to use triple braces to
+include: <code>{{{content}}}</code></li>
+<li><strong>moduleName</strong> - name of the module itself
+Use <code>{{moduleName}}</code> as a heading or name tag within your layout.</li>
+<li><strong>pages</strong> - all pages in sorted order
+The list contains different information for each displayable page. Best is to
+iterate over it using <code>{{#iterate pages}}...{{/iterate}}</code>. Provides the following fields:
 <ul>
-<li>Fix optimizations of api code parsing.</li>
-<li>Fix inline API parsing.</li>
-<li>Fix use of new lang structure.</li>
-<li>Use the new doc extraction with optimizations.</li>
-<li>Update language doc parsing with three comment types.</li>
-<li>Use https anywhere.</li>
+<li><strong>depth</strong> - of file in tree
+This goes from 0 (main directory) to the number of subdirectories but is only
+set in code view.</li>
+<li><strong>title</strong> - title of the page
+This contains the title from the first heading within the page.</li>
+<li><strong>path</strong> - absolute file path
+Not really useful within the browser but already there because used internally.</li>
+<li><strong>link</strong> - short text (short version of title)
+This is the text you should use in your menu or sidebar because it is mostly
+shorter than the title.</li>
+<li><strong>url</strong> - relative link to it
+The link you have to use to get to this page.</li>
+<li><strong>active</strong> - flag
+Set to <code>true</code> if this is the actual page.</li>
 </ul>
-<h2 id="version-040-2016-07-20">Version 0.4.0 (2016-07-20)</h2>
-<ul>
-<li>Update alinex-fs@2.0.6</li>
-<li>Copy resources to documentation.</li>
-<li>Also let js and css links untouched.</li>
-<li>Add google search.</li>
+</li>
 </ul>
-<h2 id="version-033-2016-07-19">Version 0.3.3 (2016-07-19)</h2>
-<ul>
-<li>Fix package.</li>
-</ul>
-<h2 id="version-032-2016-07-19">Version 0.3.2 (2016-07-19)</h2>
-<ul>
-<li>Upgraded alinex-builder@2.3.0</li>
-<li>Add info about stylesheets.</li>
-<li>Fix anchor point of links.</li>
-<li>Add table of contents.</li>
-<li>Also keep image links untouched.</li>
-<li>Fix internal page linking.</li>
-<li>Create index page if not there.</li>
-</ul>
-<h2 id="version-031-2016-07-19">Version 0.3.1 (2016-07-19)</h2>
-<ul>
-<li>Add missing main link in package.json.</li>
-</ul>
-<h2 id="version-030-2016-07-19">Version 0.3.0 (2016-07-19)</h2>
-<p>Now supporting the docuemntation and code view mode.</p>
-<ul>
-<li>Upgrade yargs@4.8.1</li>
-<li>Add description of handlebars template variables.</li>
-<li>Start documenting the templates.</li>
-<li>Add options in man and debug possibilities.</li>
-<li>Optimize API documentation.</li>
-<li>Update all language formats.</li>
-<li>Change style of headings.</li>
-<li>Optimize documentation.</li>
-<li>Add install and usage information for api.</li>
-<li>Add description for #3 headings.</li>
-<li>Fix link to examples.</li>
-<li>Only indent page links if code view enabled.</li>
-<li>Allow code display to be enabled.</li>
-<li>Add help about documenting.</li>
-<li>Add handlebars support and github link.</li>
-<li>Optimize documentation.</li>
-<li>Add link to doc page hidden there.</li>
-<li>Add link to doc page hidden there.</li>
-<li>Add stylus and css highlighting.</li>
-<li>Support javascript and local file links.</li>
-<li>Add correct line numbers.</li>
-<li>Better formating for code lists with line numbers.</li>
-<li>Remove line numbers in text code blocks.</li>
-<li>Allow full height if only code.</li>
-<li>CHange style of further links in small view.</li>
-</ul>
-<h2 id="version-021-2016-07-15">Version 0.2.1 (2016-07-15)</h2>
-<ul>
-<li>upgraded alinex-report@2.1.4</li>
-</ul>
-<h2 id="version-020-2016-07-15">Version 0.2.0 (2016-07-15)</h2>
-<p>Enabled file tree with links.</p>
-<h2 id="version-012-2016-07-15">Version 0.1.2 (2016-07-15)</h2>
-<ul>
-<li>Add alinex-util, alinex-config and upgrade alinex-report@2.1.2, alinex-builder@2.2.1, async@2.0.0</li>
-<li>Allow line numbers in code view (but not correct, yet).</li>
-<li>Rename links to Alinex Namespace.</li>
-<li>Add heading to the file list.</li>
-<li>Import report templates into this package.</li>
-<li>Extract first block comments out of coffee files.</li>
-<li>Optimize style.</li>
-<li>Restructure filetree information for new templates.</li>
-<li>Update self documentation with first activity diagram.</li>
-<li>Add file tree to documents.</li>
-<li>Comments for missing data.</li>
-<li>Sort files and add to context for html.</li>
-</ul>
-<h2 id="version-011-2016-07-12">Version 0.1.1 (2016-07-12)</h2>
-<ul>
-<li>Upgraded alinex-report@2.1.1for new layout.</li>
-<li>Use own layout.</li>
-</ul>
-<h2 id="version-010-2016-07-11">Version 0.1.0 (2016-07-11)</h2>
-<ul>
-<li>Fix some lint errors.</li>
-<li>Updated documentation.</li>
-<li>Update help.</li>
-<li>Write html files of markdown.</li>
-<li>Finish language detection.</li>
-<li>File detection working.</li>
-<li>Add development packages: builder, chai.</li>
-<li>Read all text files.</li>
-<li>Setup cli application.</li>
-<li>Initial setup.</li>
-</ul>
+<h2 id="css-stylesheet">CSS Stylesheet</h2>
+<p>The second part is the stylesheet which may get very complex. You can do everything
+here. But you need a normal stylesheet.</p>
+<h3 id="preprocessor">Preprocessor</h3>
+<p>If you want you may use some preprocessor like styles, less or scssto create the
+stylesheets on your own. The default stylesheets are generated using stylus.</p>
 
         </div>
         <div class="col-sm-3 col-cm-pull-9 col-md-2 col-md-pull-10 sidebar">
           <h1 id="further-pages">Further Pages</h1>
           <ul class="nav nav-sidebar">
             <li class="header">
-              <a href="README.md.html">CodeDoc</a>
+              <a href="../README.md.html">CodeDoc</a>
             </li>
                 <li class="level0">
-                  <a href="README.md.html" title="Alinex CodeDoc: Readme (/README.md)">Readme</a>
+                  <a href="../README.md.html" title="Alinex CodeDoc: Readme (/README.md)">Readme</a>
                 </li>
                 <li class="level2">
-                  <a href="src/man/codedoc.1.md.html" title="codedoc(1) - Manpage (/src/man/codedoc.1.md)">Manpage</a>
+                  <a href="man/codedoc.1.md.html" title="codedoc(1) - Manpage (/src/man/codedoc.1.md)">Manpage</a>
                 </li>
                 <li class="level1">
-                  <a href="src/document.md.html" title="Writing Docs (/src/document.md)">Writing Docs</a>
+                  <a href="document.md.html" title="Writing Docs (/src/document.md)">Writing Docs</a>
+                </li>
+                <li class="active level1">
+                  <a href="template.md.html" title="Templates (/src/template.md)">Templates <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="level1">
-                  <a href="src/template.md.html" title="Templates (/src/template.md)">Templates</a>
+                  <a href="index.coffee.html" title="Controller (/src/index.coffee)">Controller</a>
                 </li>
                 <li class="level1">
-                  <a href="src/index.coffee.html" title="Controller (/src/index.coffee)">Controller</a>
+                  <a href="cli.coffee.html" title="Startup script (/src/cli.coffee)">Startup script</a>
                 </li>
                 <li class="level1">
-                  <a href="src/cli.coffee.html" title="Startup script (/src/cli.coffee)">Startup script</a>
-                </li>
-                <li class="level1">
-                  <a href="src/language.coffee.html" title="Language Definition (/src/language.coffee)">Language Definition</a>
+                  <a href="language.coffee.html" title="Language Definition (/src/language.coffee)">Language Definition</a>
                 </li>
                 <li class="level0">
-                  <a href="coffeelint.json.html" title="File: coffeelint.json (/coffeelint.json)">coffeelint.json</a>
+                  <a href="../coffeelint.json.html" title="File: coffeelint.json (/coffeelint.json)">coffeelint.json</a>
                 </li>
                 <li class="level0">
-                  <a href="package.json.html" title="File: package.json (/package.json)">package.json</a>
+                  <a href="../package.json.html" title="File: package.json (/package.json)">package.json</a>
                 </li>
                 <li class="level1">
-                  <a href="bin/codedoc.html" title="Start CLI (/bin/codedoc)">Start CLI</a>
+                  <a href="../bin/codedoc.html" title="Start CLI (/bin/codedoc)">Start CLI</a>
                 </li>
                 <li class="level4">
-                  <a href="var/src/template/report/codedoc.css.html" title="File: codedoc.css (/var/src/template/report/codedoc.css)">codedoc.css</a>
+                  <a href="../var/src/template/report/codedoc.css.html" title="File: codedoc.css (/var/src/template/report/codedoc.css)">codedoc.css</a>
                 </li>
                 <li class="level4">
-                  <a href="var/src/template/report/codedoc.hbs.html" title="File: codedoc.hbs (/var/src/template/report/codedoc.hbs)">codedoc.hbs</a>
+                  <a href="../var/src/template/report/codedoc.hbs.html" title="File: codedoc.hbs (/var/src/template/report/codedoc.hbs)">codedoc.hbs</a>
                 </li>
                 <li class="level4">
-                  <a href="var/src/template/report/codedoc.styl.html" title="Default Style (/var/src/template/report/codedoc.styl)">Default Style</a>
+                  <a href="../var/src/template/report/codedoc.styl.html" title="Default Style (/var/src/template/report/codedoc.styl)">Default Style</a>
                 </li>
                 <li class="level0">
-                  <a href=".travis.yml.html" title="File: .travis.yml (/.travis.yml)">.travis.yml</a>
+                  <a href="../.travis.yml.html" title="File: .travis.yml (/.travis.yml)">.travis.yml</a>
                 </li>
-                <li class="active level0">
-                  <a href="Changelog.md.html" title="Version changes (/Changelog.md)">Version changes <span class="sr-only">(current)</span></a>
+                <li class="level0">
+                  <a href="../Changelog.md.html" title="Version changes (/Changelog.md)">Version changes</a>
                 </li>
           </ul>
         </div>
