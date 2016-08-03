@@ -139,6 +139,7 @@ fast lookup of often used packages.
 <p><a href="http://chaijs.com/">chai</a> assertion library that can be paired with mocha</p>  
 <p><a href="https://github.com/bnoordhuis/node-heapdump">HeapDump</a> create a heapdump to analyze using Chrome</p>
 <p><a href="http://mochajs.org/">mocha</a> simple, flexible test tool</p>
+<p><a href="https://www.npmjs.com/package/rewire">rewire</a> dependency injection for testing</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
