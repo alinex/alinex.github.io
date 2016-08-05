@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>File: coffeelint.json</title>
+    <title>Example: CoffeeScript</title>
     <meta name="HandheldFriendly" content="true" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -72,249 +72,189 @@
 </script>
 <gcse:searchresults-only></gcse:searchresults-only>
 
-          <main><p></p>
-<!-- end-of-toc -->
-<h1 id="file-coffeelintjson">File: coffeelint.json</h1>
+          <main><p><ul class="table-of-contents" aria-hidden="true"><header>Index</header>
+<li><a href="#main-documentation">Main Documentation</a></li>
+<li><a href="#external-api">External API</a></li>
+<li><a href="#internal-api">Internal API</a></li>
+<li><a href="#tricks-and-tips">Tricks and Tips</a>
+<ul>
+<li><a href="#problem-with-name-detection">Problem with name detection</a></li>
+<li><a href="#parameters-partly-internal">Parameters partly internal</a></li>
+</ul>
+</li>
+<li class="sidebar"><a href="#further-pages">Further Pages</a></li></ul>
+</p><h1 id="example-coffeescript">Example: CoffeeScript</h1>
 <blockquote>
-<p>Path: /coffeelint.json</p>
+<p>In the following examples I will use code from the codedoc package. But it is slightly
+changed to see more of the possibilities.</p>
 </blockquote>
-<pre style="max-height:none" class="language json"><header>JSON Data</header><code>{</code>
-<code>    <span class="hljs-attr">"arrow_spacing"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"arrow_spacing"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"braces_spacing"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"braces_spacing"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"camel_case_classes"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"camel_case_classes"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"coffeescript_error"</span>: {</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"colon_assignment_spacing"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"colon_assignment_spacing"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span>,</code>
-<code>        <span class="hljs-attr">"spacing"</span>: {</code>
-<code>            <span class="hljs-attr">"left"</span>: <span class="hljs-number">0</span>,</code>
-<code>            <span class="hljs-attr">"right"</span>: <span class="hljs-number">1</span></code>
-<code>        }</code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"cyclomatic_complexity"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"cyclomatic_complexity"</span>,</code>
-<code>        <span class="hljs-attr">"value"</span>: <span class="hljs-number">15</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"ignore"</span>,</code>
-<code>        <span class="hljs-attr">"comment"</span>: <span class="hljs-string">"-----&gt; maybe set to warn but gives lots of warnings at the moment"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"duplicate_key"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"duplicate_key"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"empty_constructor_needs_parens"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"empty_constructor_needs_parens"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"ensure_comprehensions"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"ensure_comprehensions"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"eol_last"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"eol_last"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"indentation"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"indentation"</span>,</code>
-<code>        <span class="hljs-attr">"value"</span>: <span class="hljs-number">2</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"line_endings"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"line_endings"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span>,</code>
-<code>        <span class="hljs-attr">"value"</span>: <span class="hljs-string">"unix"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"max_line_length"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"max_line_length"</span>,</code>
-<code>        <span class="hljs-attr">"value"</span>: <span class="hljs-number">100</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span>,</code>
-<code>        <span class="hljs-attr">"limitComments"</span>: <span class="hljs-literal">true</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"missing_fat_arrows"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"missing_fat_arrows"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"ignore"</span>,</code>
-<code>        <span class="hljs-attr">"comment"</span>: <span class="hljs-string">"just now this is buggy in case of sending the instance itself to a method"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"newlines_after_classes"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"newlines_after_classes"</span>,</code>
-<code>        <span class="hljs-attr">"value"</span>: <span class="hljs-number">3</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_backticks"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_backticks"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_debugger"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_debugger"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_empty_functions"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_empty_functions"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"ignore"</span>,</code>
-<code>        <span class="hljs-attr">"comment"</span>: <span class="hljs-string">"used as default callback ( cb = -&gt; )"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_empty_param_list"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_empty_param_list"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_implicit_braces"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_implicit_braces"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span>,</code>
-<code>        <span class="hljs-attr">"strict"</span>: <span class="hljs-literal">false</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_implicit_parens"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_implicit_parens"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"ignore"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_interpolation_in_single_quotes"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_interpolation_in_single_quotes"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_plusplus"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_plusplus"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"ignore"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_stand_alone_at"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_stand_alone_at"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_tabs"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_tabs"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_this"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_this"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"ignore"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_throwing_strings"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_throwing_strings"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_trailing_semicolons"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_trailing_semicolons"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"error"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_trailing_whitespace"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_trailing_whitespace"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span>,</code>
-<code>        <span class="hljs-attr">"allowed_in_comments"</span>: <span class="hljs-literal">false</span>,</code>
-<code>        <span class="hljs-attr">"allowed_in_empty_lines"</span>: <span class="hljs-literal">false</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_unnecessary_double_quotes"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_unnecessary_double_quotes"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"ignore"</span>,</code>
-<code>        <span class="hljs-attr">"comments"</span>: <span class="hljs-string">"allowed for human messages which contain ' and maybe later get some interpolations into"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"no_unnecessary_fat_arrows"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"no_unnecessary_fat_arrows"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"non_empty_constructor_needs_parens"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"non_empty_constructor_needs_parens"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"ignore"</span>,</code>
-<code>        <span class="hljs-attr">"comment"</span>: <span class="hljs-string">"often used for generating error messages"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"prefer_english_operator"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"prefer_english_operator"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"space_operators"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"space_operators"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"ignore"</span>,</code>
-<code>        <span class="hljs-attr">"comment"</span>: <span class="hljs-string">"used as short form in index access like x.length-1"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"spacing_after_comma"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"spacing_after_comma"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    },</code>
-<code>    <span class="hljs-attr">"transform_messes_up_line_numbers"</span>: {</code>
-<code>        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"transform_messes_up_line_numbers"</span>,</code>
-<code>        <span class="hljs-attr">"level"</span>: <span class="hljs-string">"warn"</span></code>
-<code>    }</code>
-<code>}</code></pre>
+<h2 id="main-documentation">Main Documentation</h2>
+<p>First things always are the general files:</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/alinex/node-codedoc/master/README.md">README.md</a> - <br />
+the index page in markdown</li>
+<li><a href="https://raw.githubusercontent.com/alinex/node-codedoc/master/Changelog.md">Changelog.md</a> - <br />
+the changes per each version</li>
+</ul>
+<p>Next you should add the main headding with some explanation:</p>
+<pre class="language coffeescript"><header>CoffeeScript Code</header><code><span class="hljs-comment">###</span></code>
+<code><span class="hljs-comment">Controller - Package Main</span></code>
+<code><span class="hljs-comment">=================================================</span></code>
+<code><span class="hljs-comment">This module is used as the base API. If you load the package you will get a reference</span></code>
+<code><span class="hljs-comment">to the exported methods, here. Also the CLI works through this API.</span></code>
+<code><span class="hljs-comment">###</span></code></pre>
+<p>Next maybe some more explanation as subheadings with detailed description, graphs and
+overall examples:</p>
+<pre class="language coffeescript"><header>CoffeeScript Code</header><code><span class="hljs-comment">###</span></code>
+<code><span class="hljs-comment">Workflow</span></code>
+<code><span class="hljs-comment">-------------------------------------------------</span></code>
+<code><span class="hljs-comment"></span></code>
+<code><span class="hljs-comment">The following graph will show you the basic steps in creating the documentation:</span></code>
+<code><span class="hljs-comment"></span></code>
+<code><span class="hljs-comment">&gt; Plantuml is cut out to make example shorter!</span></code>
+<code><span class="hljs-comment"></span></code>
+<code><span class="hljs-comment">###</span> Sorting</code>
+<code></code>
+<code>The file links are sorted <span class="hljs-keyword">in</span> a natural way. This <span class="hljs-keyword">is</span> from upper to lower directories</code>
+<code><span class="hljs-keyword">and</span> alphabetically but with some defined orders. This means that <span class="hljs-string">'index.*'</span> always</code>
+<code>comes before <span class="hljs-string">'README.md'</span> <span class="hljs-keyword">and</span> the other files.</code>
+<code><span class="hljs-comment">###</span></code>
+<code><span class="hljs-comment"></span></code></pre>
+<p>As you see above the <code>#3</code>-heading syntax is special an no propper markup, it should be
+<code>###</code> but because this will collide with the doc block delimiter we use a special syntax
+here.</p>
+<h2 id="external-api">External API</h2>
+<p>The external API is also put in such doc block comments with some annotation tags
+just before the function definition:</p>
+<pre class="language coffeescript"><header>CoffeeScript Code</header><code><span class="hljs-comment">###</span></code>
+<code><span class="hljs-comment">@param {object} setup defining the document creation</span></code>
+<code><span class="hljs-comment">- `input` - path to read from</span></code>
+<code><span class="hljs-comment">- `òutput`- output directory to store to</span></code>
+<code><span class="hljs-comment">- `find` - source search pattern</span></code>
+<code><span class="hljs-comment">  - `include` - files to include see [alinex-fs](https://alinex.github.io/node-fs)</span></code>
+<code><span class="hljs-comment">  - `exclude` - files to exclude see [alinex-fs](https://alinex.github.io/node-fs)</span></code>
+<code><span class="hljs-comment">- `brand` - branding name to remove from automatic titles</span></code>
+<code><span class="hljs-comment">- `verbose` - level of verbose mode</span></code>
+<code><span class="hljs-comment">@param {function(err)} cb function to be called after done</span></code>
+<code><span class="hljs-comment">###</span></code>
+<code>exports.run = <span class="hljs-function"><span class="hljs-params">(setup, cb)</span> -&gt;</span></code>
+<code>  <span class="hljs-comment"># set up system</span></code>
+<code>  setup.input = path.resolve setup.input ? <span class="hljs-string">'.'</span></code>
+<code>  <span class="hljs-comment"># code goes on...</span></code></pre>
+<p>As there is no heading it will be auto created as ‘run()’ from the first code line.
+As you see there are alos some parameter described.</p>
+<h2 id="internal-api">Internal API</h2>
+<p>This is wwritten as normal command lines.</p>
+<pre class="language coffeescript"><header>CoffeeScript Code</header><code><span class="hljs-comment"># Sorting the page map is done by generating sort strings for each page from the</span></code>
+<code><span class="hljs-comment"># order in the lists above, the file depth and file name. The keys will be sorted</span></code>
+<code><span class="hljs-comment"># and a new object is generated in this sort order.</span></code>
+<code><span class="hljs-comment">#</span></code>
+<code><span class="hljs-comment"># @param {object} map map of pages</span></code>
+<code><span class="hljs-comment"># - `parts` is used to calculate the order</span></code>
+<code><span class="hljs-comment"># @param {boolean} [reverse=false] flag for reversed sorting</span></code>
+<code><span class="hljs-comment"># @return {object} the sorted map of pages</span></code>
+<code><span class="hljs-function"><span class="hljs-title">sortMap</span> = <span class="hljs-params">(map)</span> -&gt;</span></code>
+<code>  <span class="hljs-comment"># code goes on...</span></code></pre>
+<p>The parameter for reversed sorting also shows you how to mark an parameter as optional
+and give it some default values.</p>
+<h2 id="tricks-and-tips">Tricks and Tips</h2>
+<h3 id="problem-with-name-detection">Problem with name detection</h3>
+<p>If the system can’t autoatically detect the element name you may use the <code>@name</code>
+tag to add it yourself:</p>
+<pre class="language coffeescript"><header>CoffeeScript Code</header><code><span class="hljs-comment">###</span></code>
+<code><span class="hljs-comment">@name stat()</span></code>
+<code><span class="hljs-comment">@param {String|Buffer} path local path to check</span></code>
+<code><span class="hljs-comment">@param {function(err, stats)} cb callback which gets an `Error` or a `Stats` object.</span></code>
+<code><span class="hljs-comment">###</span></code>
+<code><span class="hljs-built_in">module</span>.exports.stat = memoizee fs.stat</code></pre>
+<h3 id="parameters-partly-internal">Parameters partly internal</h3>
+<p>Sometimes you have methods, which use some additional internal parameters mostly
+in resursive calls. Add them after an <code>@internal</code> tag. Everything after this
+tag will be ignored for normal View nut added in the internal documentation generation.</p>
+<pre class="language coffeescript"><header>CoffeeScript Code</header><code><span class="hljs-comment">###</span></code>
+<code><span class="hljs-comment">@param {String} search source path to be searched in</span></code>
+<code><span class="hljs-comment">@param {Object} [options] specifications for check which define which files to list</span></code>
+<code><span class="hljs-comment">@param {function(err, list)} [cb] callback which is called after done with an `Èrror`</span></code>
+<code><span class="hljs-comment">or the complete list of files found as `Àrray`</span></code>
+<code><span class="hljs-comment">@internal The `depth` parameter is only used internally.</span></code>
+<code><span class="hljs-comment">@param {Integer} [depth=0] current depth in file tree</span></code>
+<code><span class="hljs-comment">###</span></code>
+<code>find = <span class="hljs-built_in">module</span>.exports.find = <span class="hljs-function"><span class="hljs-params">(source, options, cb , depth = <span class="hljs-number">0</span> )</span> -&gt;</span></code></pre>
+<p>It doesn’t matter that the different type of tags are scrambled, they will be output
+ordered by type.</p>
 </main>
         </div>
         <div class="col-sm-3 col-cm-pull-9 col-md-2 col-md-pull-10 sidebar">
           <h1 id="further-pages">Further Pages</h1>
           <ul class="nav nav-sidebar">
             <li class="header">
-              <a href="README.md.html">CodeDoc</a>
+              <a href="../../README.md.html">CodeDoc</a>
             </li>
                 <li class="level0">
-                  <a href="README.md.html" title="Alinex CodeDoc: Readme (/README.md)">Readme</a>
+                  <a href="../../README.md.html" title="Alinex CodeDoc: Readme (/README.md)">Readme</a>
                 </li>
                 <li class="level2">
-                  <a href="src/man/codedoc.1.md.html" title="codedoc(1) - Manpage (/src/man/codedoc.1.md)">Manpage</a>
+                  <a href="../man/codedoc.1.md.html" title="codedoc(1) - Manpage (/src/man/codedoc.1.md)">Manpage</a>
                 </li>
                 <li class="level1">
-                  <a href="src/document.md.html" title="Writing Docs (/src/document.md)">Writing Docs</a>
+                  <a href="../document.md.html" title="Writing Docs (/src/document.md)">Writing Docs</a>
                 </li>
                 <li class="level1">
-                  <a href="src/template.md.html" title="Templates (/src/template.md)">Templates</a>
+                  <a href="../template.md.html" title="Templates (/src/template.md)">Templates</a>
                 </li>
                 <li class="level1">
-                  <a href="src/index.coffee.html" title="Controller - API Usage (/src/index.coffee)">API Usage</a>
+                  <a href="../index.coffee.html" title="Controller - API Usage (/src/index.coffee)">API Usage</a>
+                </li>
+                <li class="active level2">
+                  <a href="coffee.md.html" title="Example: CoffeeScript (/src/example/coffee.md)">CoffeeScript <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="level2">
-                  <a href="src/example/coffee.md.html" title="Example: CoffeeScript (/src/example/coffee.md)">CoffeeScript</a>
+                  <a href="../helper/language.coffee.html" title="Language Definition (/src/helper/language.coffee)">Language Definition</a>
                 </li>
                 <li class="level2">
-                  <a href="src/helper/language.coffee.html" title="Language Definition (/src/helper/language.coffee)">Language Definition</a>
+                  <a href="../helper/parse.coffee.html" title="Parser (/src/helper/parse.coffee)">Parser</a>
                 </li>
                 <li class="level2">
-                  <a href="src/helper/parse.coffee.html" title="Parser (/src/helper/parse.coffee)">Parser</a>
-                </li>
-                <li class="level2">
-                  <a href="src/helper/render.coffee.html" title="Renderer (/src/helper/render.coffee)">Renderer</a>
+                  <a href="../helper/render.coffee.html" title="Renderer (/src/helper/render.coffee)">Renderer</a>
                 </li>
                 <li class="level1">
-                  <a href="src/cli.coffee.html" title="CLI Parser (/src/cli.coffee)">CLI Parser</a>
-                </li>
-                <li class="active level0">
-                  <a href="coffeelint.json.html" title="File: coffeelint.json (/coffeelint.json)">coffeelint.json <span class="sr-only">(current)</span></a>
+                  <a href="../cli.coffee.html" title="CLI Parser (/src/cli.coffee)">CLI Parser</a>
                 </li>
                 <li class="level0">
-                  <a href="package.json.html" title="File: package.json (/package.json)">package.json</a>
-                </li>
-                <li class="level1">
-                  <a href="bin/codedoc.html" title="Executable (/bin/codedoc)">Executable</a>
-                </li>
-                <li class="level1">
-                  <a href="var/index.md.html" title="Layout and Style (/var/index.md)">Layout and Style</a>
-                </li>
-                <li class="level4">
-                  <a href="var/src/template/report/codedoc-links.hbs.html" title="File: codedoc-links.hbs (/var/src/template/report/codedoc-links.hbs)">codedoc-links.hbs</a>
-                </li>
-                <li class="level4">
-                  <a href="var/src/template/report/codedoc-logo.hbs.html" title="File: codedoc-logo.hbs (/var/src/template/report/codedoc-logo.hbs)">codedoc-logo.hbs</a>
-                </li>
-                <li class="level4">
-                  <a href="var/src/template/report/codedoc-search-result.hbs.html" title="File: codedoc-search-result.hbs (/var/src/template/report/codedoc-search-result.hbs)">codedoc-search-result.hbs</a>
-                </li>
-                <li class="level4">
-                  <a href="var/src/template/report/codedoc.css.html" title="File: codedoc.css (/var/src/template/report/codedoc.css)">codedoc.css</a>
-                </li>
-                <li class="level4">
-                  <a href="var/src/template/report/codedoc.hbs.html" title="File: codedoc.hbs (/var/src/template/report/codedoc.hbs)">codedoc.hbs</a>
-                </li>
-                <li class="level4">
-                  <a href="var/src/template/report/codedoc.styl.html" title="codedoc Style (/var/src/template/report/codedoc.styl)">codedoc Style</a>
+                  <a href="../../coffeelint.json.html" title="File: coffeelint.json (/coffeelint.json)">coffeelint.json</a>
                 </li>
                 <li class="level0">
-                  <a href=".travis.yml.html" title="File: .travis.yml (/.travis.yml)">.travis.yml</a>
+                  <a href="../../package.json.html" title="File: package.json (/package.json)">package.json</a>
+                </li>
+                <li class="level1">
+                  <a href="../../bin/codedoc.html" title="Executable (/bin/codedoc)">Executable</a>
+                </li>
+                <li class="level1">
+                  <a href="../../var/index.md.html" title="Layout and Style (/var/index.md)">Layout and Style</a>
+                </li>
+                <li class="level4">
+                  <a href="../../var/src/template/report/codedoc-links.hbs.html" title="File: codedoc-links.hbs (/var/src/template/report/codedoc-links.hbs)">codedoc-links.hbs</a>
+                </li>
+                <li class="level4">
+                  <a href="../../var/src/template/report/codedoc-logo.hbs.html" title="File: codedoc-logo.hbs (/var/src/template/report/codedoc-logo.hbs)">codedoc-logo.hbs</a>
+                </li>
+                <li class="level4">
+                  <a href="../../var/src/template/report/codedoc-search-result.hbs.html" title="File: codedoc-search-result.hbs (/var/src/template/report/codedoc-search-result.hbs)">codedoc-search-result.hbs</a>
+                </li>
+                <li class="level4">
+                  <a href="../../var/src/template/report/codedoc.css.html" title="File: codedoc.css (/var/src/template/report/codedoc.css)">codedoc.css</a>
+                </li>
+                <li class="level4">
+                  <a href="../../var/src/template/report/codedoc.hbs.html" title="File: codedoc.hbs (/var/src/template/report/codedoc.hbs)">codedoc.hbs</a>
+                </li>
+                <li class="level4">
+                  <a href="../../var/src/template/report/codedoc.styl.html" title="codedoc Style (/var/src/template/report/codedoc.styl)">codedoc Style</a>
                 </li>
                 <li class="level0">
-                  <a href="Changelog.md.html" title="Version changes (/Changelog.md)">Version changes</a>
+                  <a href="../../.travis.yml.html" title="File: .travis.yml (/.travis.yml)">.travis.yml</a>
+                </li>
+                <li class="level0">
+                  <a href="../../Changelog.md.html" title="Version changes (/Changelog.md)">Version changes</a>
                 </li>
           </ul>
         </div>
