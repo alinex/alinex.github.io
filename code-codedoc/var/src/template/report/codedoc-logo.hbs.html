@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Writing Docs</title>
+    <title>File: codedoc-logo.hbs</title>
     <meta name="HandheldFriendly" content="true" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -72,388 +72,78 @@
 </script>
 <gcse:searchresults-only></gcse:searchresults-only>
 
-          <p><ul class="table-of-contents" aria-hidden="true"><header>Index</header>
-<li><a href="#where-to-write-documentation">Where to write documentation?</a>
-<ul>
-<li><a href="#extra-documents">Extra Documents</a></li>
-<li><a href="#code-documentation">Code Documentation</a>
-<ul>
-<li><a href="#fixtures">Fixtures</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#how-to-write">How to Write?</a>
-<ul>
-<li><a href="#first-heading">First Heading</a></li>
-<li><a href="#extended-markdown">Extended Markdown</a></li>
-<li><a href="#automatic-headings-in-code">Automatic Headings in Code</a></li>
-<li><a href="#use-of-tags">Use of Tags</a></li>
-<li><a href="#possible-tags">Possible Tags</a></li>
-</ul>
-</li>
-<li class="sidebar"><a href="#further-pages">Further Pages</a></li></ul>
-</p><h1 id="writing-docs">Writing Docs</h1>
-<p>To use codedoc you have to write your documentation into <strong>documentation files</strong>
-or/and <strong>within the code</strong> as comment blocks. The format should be <strong>simple or extended
-markdown</strong> maybe with jsDoc/JavaDoc like annotations.</p>
-<h2 id="where-to-write-documentation">Where to write documentation?</h2>
-<h3 id="extra-documents">Extra Documents</h3>
-<p>If you write some documents into separate files name them with a markdown extension
-of <code>*.md</code> like:</p>
-<pre><code>README.md
-Changelog.md
-</code></pre>
-<h3 id="code-documentation">Code Documentation</h3>
-<p>Additionally you can document within the code. That allows you to edit your documentation
-where it belongs to and to also make an API documentation.</p>
-<p>You have the possibility between three types of documenttation:</p>
-<ul>
-<li>
-<p><strong>Documentation and external API</strong></p>
-<p>This is a top level documentation which goes always into the documentation. Write
-it in the language specific doc comment style.</p>
-</li>
-<li>
-<p><strong>Internal API</strong></p>
-<p>This is normally ignored in the documentation creation. Only in the 'code view’
-this will be displayed alongside the code itself. The style will be the same as
-for external API. It is written as block comment.</p>
-</li>
-<li>
-<p><strong>Code Comments</strong></p>
-<p>And at last you may use normal single line comments in the language which won’t be
-extracted but shown highlighted within the code view.</p>
-</li>
-</ul>
-<p>The concrete style for each type of comment differs on the used language. See the
-following examples for CoffeeScript and JavaScript:</p>
-<pre class="language javascript"><header>JavaScript Code</header><code><span class="hljs-comment">/**</span></code>
-<code><span class="hljs-comment"> *  Document comment for general documentation or to document external API.</span></code>
-<code><span class="hljs-comment"> */</span></code>
-<code></code>
-<code> <span class="hljs-comment">/*</span></code>
-<code><span class="hljs-comment">  *  Document comment for internal function</span></code>
-<code><span class="hljs-comment">  */</span></code>
-<code>x = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{</code>
-<code>  <span class="hljs-comment">// inline code comment</span></code>
-<code>  <span class="hljs-comment">/* as single line it's the same */</span></code>
-<code>}</code></pre>
-<pre class="language coffeescript"><header>CoffeeScript Code</header><code><span class="hljs-comment">###</span></code>
-<code><span class="hljs-comment">Document comment for general documentation or to document external API.</span></code>
-<code><span class="hljs-comment">###</span></code>
-<code></code>
-<code><span class="hljs-comment">#</span></code>
-<code><span class="hljs-comment"># Document comment for internal function</span></code>
-<code><span class="hljs-comment">#</span></code>
-<code><span class="hljs-function"><span class="hljs-title">x</span> = -&gt;</span></code>
-<code>  <span class="hljs-comment"># inline code comment</span></code></pre>
-<p>See the following table for the detected styles per each language.</p>
-<p>Like in the above languages a lot of other ones are supported, too:</p>
-<table>
-<thead>
-<tr>
-<th>Language</th>
-<th>Doc Comment</th>
-<th>Internal API <sup>1</sup></th>
-<th>Code Comments <sup>2</sup></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CoffeeScript</td>
-<td>### … ###</td>
-<td>#…</td>
-<td>#…</td>
-</tr>
-<tr>
-<td>JavaScript</td>
-<td>/** … */</td>
-<td>/<em>…</em>/, // …</td>
-<td>//… or /<em>…</em>/</td>
-</tr>
-<tr>
-<td>LiveScript</td>
-<td>/** … */</td>
-<td>/<em>…</em>/, // …</td>
-<td>//… or /<em>…</em>/</td>
-</tr>
-<tr>
-<td>Ruby</td>
-<td>=begin … =end</td>
-<td>#…</td>
-<td>#…</td>
-</tr>
-<tr>
-<td>Python</td>
-<td>### + #… lines</td>
-<td>#…</td>
-<td>#…</td>
-</tr>
-<tr>
-<td>Perl</td>
-<td>=pod … =cut</td>
-<td>#…</td>
-<td>#…</td>
-</tr>
-<tr>
-<td>C, C++, c#</td>
-<td>/** … */</td>
-<td>/<em>…</em>/, // …</td>
-<td>//… or /<em>…</em>/</td>
-</tr>
-<tr>
-<td>Java, JSP</td>
-<td>/** … */</td>
-<td>/<em>…</em>/, // …</td>
-<td>//… or /<em>…</em>/</td>
-</tr>
-<tr>
-<td>Groovy</td>
-<td>/** … */</td>
-<td>/<em>…</em>/, // …</td>
-<td>//… or /<em>…</em>/</td>
-</tr>
-<tr>
-<td>PHP</td>
-<td>/** … */</td>
-<td>/<em>…</em>/, // …</td>
-<td>//… or /<em>…</em>/</td>
-</tr>
-<tr>
-<td>Bash</td>
-<td>### + #… lines</td>
-<td>#…</td>
-<td>#…</td>
-</tr>
-<tr>
-<td>YAML</td>
-<td>### + #… lines</td>
-<td>#…</td>
-<td>#…</td>
-</tr>
-<tr>
-<td>SCSS</td>
-<td>/** … */</td>
-<td>/<em>…</em>/, // …</td>
-<td>//… or /<em>…</em>/</td>
-</tr>
-<tr>
-<td>Stylus, CSS, Less</td>
-<td>/** … */</td>
-<td>/<em>…</em>/, // …</td>
-<td>//… or /<em>…</em>/</td>
-</tr>
-<tr>
-<td>Makefile</td>
-<td>### + #… lines</td>
-<td>#…</td>
-<td>#…</td>
-</tr>
-<tr>
-<td>Apache</td>
-<td>### + #… lines</td>
-<td>#…</td>
-<td>#…</td>
-</tr>
-</tbody>
-</table>
-<p><sup>1</sup> Internal API always need multiple contineous comment lines<br />
-<sup>2</sup> Inline comments are the same as internal API but have only one line</p>
-<p>As you see we use the language specific styles here and most languages also use the
-same style.</p>
-<h4 id="fixtures">Fixtures</h4>
-<p>In CoffeeScript block comments a triple hash ‘###’ is the end of the doc comment
-so it cant be used as it’s markdown format for a heading level 3. As workarround
-you may use ‘#3…’ which is no standard markdown but works here. The same goes
-with the other deeper headings level 4, 5 and 6.</p>
-<h2 id="how-to-write">How to Write?</h2>
-<p>You write your documentation in the <strong>markdown</strong> format which is nearly as writing it
-in pure text down. For the simplest styles you won’t have to know anything, just
-write it down.</p>
+          <p></p>
+<!-- end-of-toc -->
+<h1 id="file-codedoc-logohbs">File: codedoc-logo.hbs</h1>
 <blockquote>
-<p>See my own short examples about <strong><a href="https://alinex.github.io/develop/lang/markdown.html">Markdown Syntax</a></strong>
-as an example.</p>
+<p>Path: /var/src/template/report/codedoc-logo.hbs</p>
 </blockquote>
-<h3 id="first-heading">First Heading</h3>
-<p>The first heading in each document will be the page title and also the name in the
-menu list. So think of a good headline at least for the first heading.</p>
-<p>To make menu entries more compact the heading will be split on ': ’ and ’ - ’ in
-parts and only the last part is used as menu entry.</p>
-<h3 id="extended-markdown">Extended Markdown</h3>
-<p>But to get more out of it look into the description of
-<a href="https://alinex.github.io/node-report">alinex-report</a> for examples and a detailed
-descriptions of the basic styles as well as extended formats like:</p>
-<ul>
-<li><a href="https://alinex.github.io/node-report/README.md.html#table">tables</a></li>
-<li><a href="https://alinex.github.io/node-report/README.md.html#font-awesome">fontawesome</a></li>
-<li><a href="https://alinex.github.io/node-report/README.md.html#charts">charts</a></li>
-<li><a href="https://alinex.github.io/node-report/README.md.html#plantuml">UML diagrams</a> using (plantuml)</li>
-<li><a href="https://alinex.github.io/node-report/README.md.html#report-elements">and more…</a></li>
-</ul>
-<h3 id="automatic-headings-in-code">Automatic Headings in Code</h3>
-<p>If in programing language files a line of code will follow directly the documentation
-block it will be used as heading. The heading will be of level 3 but only added if
-no heading level 1-3 is already included.</p>
-<h3 id="use-of-tags">Use of Tags</h3>
-<p>Additionally you can use the default <code>@xxx</code>-tags from jsDoc/JavaDoc to document your
-code. They will be replaced with properly formated description.</p>
-<p>Not all possible tags are supported because this tool won’t do a real language agnostic
-parsing and therefore mostly code independent tags are supported.<br />
-To use them you have to add them at the start or separated by an empty line from the
-heading markdown. See the example below:</p>
-<p>EXAMPLE</p>
-<p>The HTML layout of the additional information should look like:</p>
-<div class="detail">
-<blockquote>
-<p><strong>Usage</strong> private: new method(text, cb)</p>
-</blockquote>
-<dl>
-<dt>Parameter</dt>
-<dd>
-<ul>
-<li>text (string) - text to transform</li>
-<li>cb (function) - callback function</li>
-</ul>
-</dd>
-<dt>Return</dt>
-<dd>(string) transformed text</dd>
-<dt>Throws</dt>
-<dd>
-<ul>
-<li><code>Error</code> - with code 11 if given text is empty</li>
-</ul>
-</dd>
-<dt>Event</dt>
-<dd>
-<ul>
-<li><code>error</code> - if something goes wrong</li>
-<li><code>data</code> - with additional text info</li>
-</ul>
-</dd>
-<dt>See also</dt>
-<dd>
-<ul>
-<li><a href="trim.coffee.html">trim</a> as alternative implementation</li>
-</ul>
-</dd>
-</dl>
-<p>Version 0.1.3 © 2016 Alexander Schilling - License: Apache 2.0</p>
-</div>
-<h3 id="possible-tags">Possible Tags</h3>
-<p>The following list shows the currently supported tags. You will find further information
-to each of them under <a href="http://usejsdoc.org/">JsDoc</a>.</p>
-<dl>
-<dt>Auto Heading</dt>
-<dd>Define the name to be used for the heading if missing.
-<ul>
-<li><code>@name</code> or <code>@alias</code> flags</li>
-<li>alternatively extracted from first code line</li>
-</ul>
-</dd>
-<dt>Deprecation Warning</dt>
-<dd><code>@deprecated</code> flag defines this part as outdated and you should no longer use
-it because it may be removed in the next versions</dd>
-<dt>Usage Line</dt>
-<dd>Specify how to access the code.
-<ul>
-<li><code>@access &lt;string&gt;</code> to give a specific access level</li>
-<li><code>@private</code>, <code>@protected</code>, <code>@public</code> flags as predefined access levels</li>
-<li><code>@static</code> flag to define as static method</li>
-<li><code>@constant</code> flag to define as constant variable</li>
-<li><code>@constructor</code> flag to define method as constructor</li>
-<li>also the title from the auto heading also if not used there will be used</li>
-<li><code>@param</code> definition of possible parameter names</li>
-</ul>
-</dd>
-<dt>Definition List</dt>
-<dd>Different definitions:
-<ul>
-<li><code>@param</code>, <code>@arg</code>, <code>@argument</code> a method parameter with optional type
-given as: <code>@param {&lt;type&gt;} &lt;name&gt; &lt;description&gt;</code></li>
-<li><code>@return</code>, <code>@returns</code> defining what will be returned
-given as: <code>@return {&lt;type&gt;} &lt;description&gt;</code></li>
-<li><code>@throws</code>, <code>@exception</code> descripe possible excepzions
-given as: <code>@throws {&lt;type&gt;} &lt;description&gt;</code></li>
-<li><code>@event</code>, <code>@fires</code> descripe events to be thrown
-given as: <code>@event {&lt;type&gt;} &lt;name&gt; &lt;description&gt;</code></li>
-<li><code>@see</code> references additional information, use <code>{@link...}</code> within</li>
-</ul>
-</dd>
-<dt>Signature Line</dt>
-<dd>Copyright and legal information which will be displayed as line at the end:
-<ul>
-<li><code>@version</code> specific version</li>
-<li><code>@copyright</code> copyright noticr</li>
-<li><code>@author</code> name and possibly mail link to author and developers</li>
-<li><code>@license</code> license for this part</li>
-</ul>
-</dd>
-</dl>
-<p>These are mostly based on CoffeeScript and JavaScript, but others will follow if needed.
-Is something missing here? Don’t hestitate and make an issue on the
-<a href="https://github.com/alinex/node-codedoc/issues">GitHub Page</a>.</p>
+<pre style="max-height:none" class="language handlebars"><header>Handlebars Template</header><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://alinex.github.io/"</span> <span class="hljs-attr">onmouseover</span>=<span class="hljs-string">"logo.src='https://alinex.github.io/images/Alinex-200.png'"</span> <span class="hljs-attr">onmouseout</span>=<span class="hljs-string">"logo.src='https://alinex.github.io/images/Alinex-black-200.png'"</span>&gt;</span></code>
+<code>  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"logo"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://alinex.github.io/images/Alinex-black-200.png"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"150"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Alinex Homepage"</span>&gt;</span></code>
+<code><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code>
+<code><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"preload"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://alinex.github.io/images/Alinex-200.png"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span></code>
+<code></span></code></pre>
 
         </div>
         <div class="col-sm-3 col-cm-pull-9 col-md-2 col-md-pull-10 sidebar">
           <h1 id="further-pages">Further Pages</h1>
           <ul class="nav nav-sidebar">
             <li class="header">
-              <a href="../README.md.html">CodeDoc</a>
+              <a href="../../../../README.md.html">CodeDoc</a>
             </li>
                 <li class="level0">
-                  <a href="../README.md.html" title="Alinex CodeDoc: Readme (/README.md)">Readme</a>
+                  <a href="../../../../README.md.html" title="Alinex CodeDoc: Readme (/README.md)">Readme</a>
                 </li>
                 <li class="level2">
-                  <a href="man/codedoc.1.md.html" title="codedoc(1) - Manpage (/src/man/codedoc.1.md)">Manpage</a>
-                </li>
-                <li class="active level1">
-                  <a href="document.md.html" title="Writing Docs (/src/document.md)">Writing Docs <span class="sr-only">(current)</span></a>
+                  <a href="../../../../src/man/codedoc.1.md.html" title="codedoc(1) - Manpage (/src/man/codedoc.1.md)">Manpage</a>
                 </li>
                 <li class="level1">
-                  <a href="template.md.html" title="Templates (/src/template.md)">Templates</a>
+                  <a href="../../../../src/document.md.html" title="Writing Docs (/src/document.md)">Writing Docs</a>
                 </li>
                 <li class="level1">
-                  <a href="index.coffee.html" title="Controller (/src/index.coffee)">Controller</a>
+                  <a href="../../../../src/template.md.html" title="Templates (/src/template.md)">Templates</a>
                 </li>
                 <li class="level1">
-                  <a href="cli.coffee.html" title="CLI Parser (/src/cli.coffee)">CLI Parser</a>
+                  <a href="../../../../src/index.coffee.html" title="Controller (/src/index.coffee)">Controller</a>
                 </li>
                 <li class="level1">
-                  <a href="language.coffee.html" title="Language Definition (/src/language.coffee)">Language Definition</a>
+                  <a href="../../../../src/cli.coffee.html" title="CLI Parser (/src/cli.coffee)">CLI Parser</a>
+                </li>
+                <li class="level1">
+                  <a href="../../../../src/language.coffee.html" title="Language Definition (/src/language.coffee)">Language Definition</a>
                 </li>
                 <li class="level0">
-                  <a href="../coffeelint.json.html" title="File: coffeelint.json (/coffeelint.json)">coffeelint.json</a>
+                  <a href="../../../../coffeelint.json.html" title="File: coffeelint.json (/coffeelint.json)">coffeelint.json</a>
                 </li>
                 <li class="level0">
-                  <a href="../package.json.html" title="File: package.json (/package.json)">package.json</a>
+                  <a href="../../../../package.json.html" title="File: package.json (/package.json)">package.json</a>
                 </li>
                 <li class="level1">
-                  <a href="../bin/codedoc.html" title="Executable (/bin/codedoc)">Executable</a>
+                  <a href="../../../../bin/codedoc.html" title="Executable (/bin/codedoc)">Executable</a>
                 </li>
                 <li class="level4">
-                  <a href="../var/src/template/report/codedoc-links.hbs.html" title="File: codedoc-links.hbs (/var/src/template/report/codedoc-links.hbs)">codedoc-links.hbs</a>
+                  <a href="codedoc-links.hbs.html" title="File: codedoc-links.hbs (/var/src/template/report/codedoc-links.hbs)">codedoc-links.hbs</a>
+                </li>
+                <li class="active level4">
+                  <a href="codedoc-logo.hbs.html" title="File: codedoc-logo.hbs (/var/src/template/report/codedoc-logo.hbs)">codedoc-logo.hbs <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="level4">
-                  <a href="../var/src/template/report/codedoc-logo.hbs.html" title="File: codedoc-logo.hbs (/var/src/template/report/codedoc-logo.hbs)">codedoc-logo.hbs</a>
+                  <a href="codedoc-search-result.hbs.html" title="File: codedoc-search-result.hbs (/var/src/template/report/codedoc-search-result.hbs)">codedoc-search-result.hbs</a>
                 </li>
                 <li class="level4">
-                  <a href="../var/src/template/report/codedoc-search-result.hbs.html" title="File: codedoc-search-result.hbs (/var/src/template/report/codedoc-search-result.hbs)">codedoc-search-result.hbs</a>
+                  <a href="codedoc.css.html" title="File: codedoc.css (/var/src/template/report/codedoc.css)">codedoc.css</a>
                 </li>
                 <li class="level4">
-                  <a href="../var/src/template/report/codedoc.css.html" title="File: codedoc.css (/var/src/template/report/codedoc.css)">codedoc.css</a>
+                  <a href="codedoc.hbs.html" title="File: codedoc.hbs (/var/src/template/report/codedoc.hbs)">codedoc.hbs</a>
                 </li>
                 <li class="level4">
-                  <a href="../var/src/template/report/codedoc.hbs.html" title="File: codedoc.hbs (/var/src/template/report/codedoc.hbs)">codedoc.hbs</a>
-                </li>
-                <li class="level4">
-                  <a href="../var/src/template/report/codedoc.styl.html" title="codedoc Style (/var/src/template/report/codedoc.styl)">codedoc Style</a>
+                  <a href="codedoc.styl.html" title="codedoc Style (/var/src/template/report/codedoc.styl)">codedoc Style</a>
                 </li>
                 <li class="level0">
-                  <a href="../.travis.yml.html" title="File: .travis.yml (/.travis.yml)">.travis.yml</a>
+                  <a href="../../../../.travis.yml.html" title="File: .travis.yml (/.travis.yml)">.travis.yml</a>
                 </li>
                 <li class="level0">
-                  <a href="../Changelog.md.html" title="Version changes (/Changelog.md)">Version changes</a>
+                  <a href="../../../../Changelog.md.html" title="Version changes (/Changelog.md)">Version changes</a>
                 </li>
           </ul>
         </div>

@@ -1,5 +1,5 @@
 ---
-title: Alinex Universe
+title: Alinex Namespace
 layout: title
 ---
 
