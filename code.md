@@ -22,7 +22,7 @@ the [General docs](http://alinex.github.io/node-alinex/).
     a built tool to help while developing</p>
 <p><a href="http://alinex.github.io/node-codedoc/">codedoc</a>
     a tool to extract documentation out of code</p>
-<p><a href="http://alinex.github.io/node-alinex/">core</a>
+<p><a href="http://alinex.github.io/node-core/">core</a>
     application basics (internal only)</p>
 <p><a href="http://alinex.github.io/node-handlebars/">handlebars</a>
     helper collection for handlebars templates</p>
