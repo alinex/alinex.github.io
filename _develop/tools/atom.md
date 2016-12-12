@@ -43,7 +43,6 @@ Plugins I Use
 ### Programming
 
 - git-plus - good integration of git commands
-- plantuml - make uml diagrams
 - language-plantuml - with syntax highlighting
 - plantuml-preview - and preview on save
 - todo-show - opens a pane for all todos

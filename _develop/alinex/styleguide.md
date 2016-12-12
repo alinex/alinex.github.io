@@ -206,7 +206,12 @@ DEBUG=mypack node lib/index.js
 You will get the debug output. You can add multiple debug packages with colon or
 use asterisk like 'mypack*' to select the package with all sublevel.
 
+You can also add multiple debug statements and exclude some:
 
+    DEBUG=config*,exec*
+    DEBUG=*,-config*
+
+    
 Testing
 -------------------------------------------------
 Linting is used to precheck the code. This will not only check the syntax but also
