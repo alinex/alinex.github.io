@@ -181,6 +181,35 @@ Use the preset names:
     git push origin master
 
 
+Branches
+-------------------------------------------------
+Create a new branch using:
+
+    git checkout -b <name>
+
+Show the current branch:
+
+    git branch
+
+Switch between branches:
+
+    git checkout <name>
+
+To merge it with the master:
+
+    git checkout master
+    git merge <name>
+
+To remove the branch after done:
+
+    git branch -d <name>
+
+To sync the changes use (for all branches):
+
+    git pull --all
+    git push --all
+
+
 Subversion Integration
 -------------------------------------------------
 If you have a subversion server as master you may also use git for your work and
