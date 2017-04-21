@@ -22,10 +22,10 @@ This is done really easy under Linux:
 wget https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz
 # install
 sudo tar -C /usr/local -xzf go1.8.1.linux-amd64.tar.gz
-# set path
-echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
-echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
-export PATH=$PATH:/usr/local/go/bin
+# set path to go and compiled programs
+echo "export PATH=$PATH:/usr/local/go/bin:~/go/bin" >> ~/.bashrc
+echo "export PATH=$PATH:/usr/local/go/bin:~/go/bin" >> ~/.profile
+export PATH=$PATH:/usr/local/go/bin:~/go/bin
 ```
 
 Other installation methods also exist see the [Project Site](https://golang.org/doc/install).
@@ -35,3 +35,30 @@ Introduction
 ----------------------------------------------
 As first introduction to learn the language you find everything under
 [https://golang.org/doc](https://golang.org/doc) like the interactive Tout.
+
+The main commands are:
+
+    go build          # check if it can be compiled
+    go install        # to build and make a runnable command
+    go test           # run unit tests
+    <name>            # to directly run it, because you have it in your path
+    go get <path>     # fetch and install
+
+
+File Structure
+-----------------------------------------------
+The go workspace (`~/go` under Linux) contains the following directories:
+
+    src/                            # sources
+      github.com/alinex/go-learn    # package source
+        .git/                       # version control system
+        ...
+    pkg/                            # downloaded packages
+    bin/                            # executable commands
+
+
+Editor
+----------------------------------------------------
+At first I use the `Atom` editor with the folowing plugins:
+- go-plus
+- go-debug
