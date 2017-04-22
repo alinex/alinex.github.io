@@ -62,3 +62,6 @@ Editor
 At first I use the `Atom` editor with the folowing plugins:
 - go-plus
 - go-debug
+
+No need forca styleguide here because formatting is done by`gofmt`
+OOOn it's own.
