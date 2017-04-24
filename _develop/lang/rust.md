@@ -5,15 +5,24 @@ layout: develop
 
 _My first experience with rust!_
 
-I decided to dive into a new language, a compiler language this time. So I decided between
-`Go` and `Rust`. This document describes the result of my experience using `rust`.
+In my effort to learn a new language I started to checkout `Go` and `Rust` both for
+some days and do a bit in both to decide which one to choose for a deeper experience.
+I worked a lot with Java later with NodeJS but both have some problems
+for me. Java is not after my liking, while NodeJS is great for fast prototyping but
+get problems if the project grows really big.
+
+So in this article I describe the findings of `Rust` as an notebook for myself.
 
 
 Installation
 --------------------------------------------
-I installed it on my local machine using:
+To install the latest version of rust under Linux call:
 
-    $ curl https://sh.rustup.rs -sSf | sh
+``` shell
+$ curl https://sh.rustup.rs -sSf | sh
+echo "source $HOME/.cargo/env" >> ~/.bashrc
+source $HOME/.cargo/env
+```
 
 The installation told me that it will use the directory `/home/alex/.cargo/bin` for
 the new binaries and will add this to my profile's search path.
@@ -22,23 +31,14 @@ But it only did so for `.profile` so I had to add it to `.bashrc` the same way b
 That was all.
 
 
+Learning
+--------------------------------------------
+To dive into I worked through the following resources:
+-
+
+
 Setup
 --------------------------------------------
 As editor I firstly use Atom with the following additional packages:
 - language-rust
 - linter-rust
-
-
-Resume
---------------------------------------------
-Without many details hier I come to an early end with my experiences after learning
-the syntax and diving into some real codes from github.
-
-All together this language is (in the moment) to low level for me. I have to do too much
-of the basics on my own to get a working http server in example.
-
-`Rust` as I see it now is really a replacement for `C` to make the core code. What I
-am looking for is something to base stable and reusable networking components on it.
-More like the superior NodeJs.
-
-Maybe I will come again and realy start using this language but more for some core parts.

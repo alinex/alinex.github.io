@@ -5,8 +5,9 @@ layout: develop
 
 _My first experience with go!_
 
-After a short checkup of `Rust` I come to the conclusion `Go` is the new language
-to dive into. I worked a lot with Java later with NodeJS but both have some problems
+In my effort to learn a new language I started to checkout `Go` and `Rust` both for
+some days and do a bit in both to decide which one to choose for a deeper experience.
+I worked a lot with Java later with NodeJS but both have some problems
 for me. Java is not after my liking, while NodeJS is great for fast prototyping but
 get problems if the project grows really big.
 
