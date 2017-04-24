@@ -19,7 +19,7 @@ Installation
 To install the latest version of rust under Linux call:
 
 ``` shell
-$ curl https://sh.rustup.rs -sSf | sh
+curl https://sh.rustup.rs -sSf | sh
 echo "source $HOME/.cargo/env" >> ~/.bashrc
 source $HOME/.cargo/env
 ```
@@ -28,17 +28,29 @@ The installation told me that it will use the directory `/home/alex/.cargo/bin` 
 the new binaries and will add this to my profile's search path.
 But it only did so for `.profile` so I had to add it to `.bashrc` the same way by hand.
 
-That was all.
+That was all and to update it later use `rustup update`.
+
+But to get a full blown environment you may also need:
+
+``` shell
+cargo install rustfmt
+```
 
 
 Learning
 --------------------------------------------
 To dive into I worked through the following resources:
--
+- http://rust-lang.github.io/book/second-edition
 
 
-Setup
+Editor
 --------------------------------------------
 As editor I firstly use Atom with the following additional packages:
 - language-rust
 - linter-rust
+- rustfmt
+
+
+Documentation
+---------------------------------------------
+Generate documentation and open in browser using `cargo doc --open`.
