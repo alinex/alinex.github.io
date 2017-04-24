@@ -63,5 +63,12 @@ At first I use the `Atom` editor with the folowing plugins:
 - go-plus
 - go-debug
 
-No need forca styleguide here because formatting is done by`gofmt`
-OOOn it's own.
+No need for a style guide here because formatting is done by`gofmt`
+on it's own on saving.
+
+To show your documentation in the browser star the godoc server:
+
+    godoc -http=:6060 &       # to start it in the background
+
+And then go in your browser to
+[http://localhost:6060/pkg/github.com/alinex/go-learn/](http://localhost:6060/pkg/github.com/alinex/go-learn/).
