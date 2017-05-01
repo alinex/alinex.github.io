@@ -33,8 +33,12 @@ That was all and to update it later use `rustup update`.
 But to get a full blown environment you may also need:
 
 ``` shell
+rustup component add rust-src
 cargo install rustfmt
+cargo install Racer
 ```
+
+And to update Rust later use: `rustup update`
 
 
 Learning
@@ -49,8 +53,31 @@ As editor I firstly use Atom with the following additional packages:
 - language-rust
 - linter-rust
 - rustfmt
+- racer
+
+You have to setup racer with:
+- path to bin: /home/alex/.cargo/bin/racer
+- path to rust src: /home/alex/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/
 
 
 Documentation
 ---------------------------------------------
 Generate documentation and open in browser using `cargo doc --open`.
+
+
+Release
+----------------------------------------------
+To make a release you only have to use: `cargo build --release`
+
+But to get a better optimized build which is smaller in size add the following
+to `Cargo.toml`:
+
+    [profile.release]
+    lto = true        # default is false
+    panic = 'abort'   # default is 'unwind'
+
+This will enable the link time optimization and only includes the parts of the
+libraries we really used.
+
+If you want to make the resulting binary smaller you may remove the debug symbols
+with: `strip <binary>`.
