@@ -36,6 +36,7 @@ But to get a full blown environment you may also need:
 rustup component add rust-src
 cargo install rustfmt
 cargo install Racer
+cargo install just
 ```
 
 And to update Rust later use: `rustup update`
@@ -59,6 +60,9 @@ You have to setup racer with:
 - path to bin: /home/alex/.cargo/bin/racer
 - path to rust src: /home/alex/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/
 
+While the style of code is maintained using rustfmt on save of file, you have the
+ability to specify the concrete style rules: https://github.com/rust-lang-nursery/rustfmt/blob/master/Configurations.md
+
 
 Documentation
 ---------------------------------------------
@@ -81,3 +85,15 @@ libraries we really used.
 
 If you want to make the resulting binary smaller you may remove the debug symbols
 with: `strip <binary>`.
+
+
+Build Tool
+----------------------------------------------
+[just](https://github.com/casey/just) is abuild tool like make which runs commands
+produces detailed error messages and avoids make's idiosyncrasies to be easy to
+debug and less surprising than make.
+
+Install just using: `cargo install just`
+
+It needs `justfile` which defines the possible targets in the main directory.
+Afterwards you may call `just <target>` from within your main directory.
