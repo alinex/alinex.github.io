@@ -92,7 +92,8 @@ Documenting
 ----------------------------------------------------
 To show your documentation in the browser start the godoc server:
 
-    godoc -http=:6060 &       # to start it in the background
+    godoc -http=:6060 &                 # to start it in the background
+    xdg-open http://localhost:6060/pkg/ # to open the package list in the browser
 
 And then go in your browser to
 [http://localhost:6060/pkg/github.com/alinex/go-learn/](http://localhost:6060/pkg/github.com/alinex/go-learn/).
