@@ -38,16 +38,16 @@ cargo install rustfmt
 cargo install Racer
 cargo install just
 cargo install cargo-check
+rustup override add nightly
 cargo install clippy
+rustup override remove
 ```
-
-And to update Rust later use: `rustup update`
 
 
 Learning
 --------------------------------------------
 To dive into I worked through the following resources:
-- http://rust-lang.github.io/book/second-edition
+- [The Rust Programming Language](http://rust-lang.github.io/book/second-edition)
 
 
 Editor
@@ -134,10 +134,12 @@ The alinex projects use the following targets:
 - `build` to check if it can be build
 - `lint` to check code using clippy
 - `showdoc` create and open documentation in browser
+- `doc` unly update documentation
 - `release` make a release file
 - `publish` to finalize current version
 - `nightly` to switch to nightly rust
 - `stable` to switch back to stable
+
 
 Packages
 ----------------------------------------------
@@ -146,3 +148,18 @@ Rust packages can be found in [crates.io](https://crates.io/search?q=just).
 Some popular and useful packages are:
 - clap - cli interface and argument parser
 - just - make alternative
+
+
+Coding
+-----------------------------------------------
+If you use linting through `clippy` you may ignore a warning at one point. To do
+this use the following syntax which is only read on the `cargo clippy` call which
+is also run using `just link` in the alinex projects:
+
+    #[cfg_attr(feature = "cargo-clippy", allow(needless_pass_by_value))]
+    fn is_u32(v: String) -> Result<(), String> {
+        if v.parse::<u32>().is_ok() {
+            return Ok(());
+        }
+        Err(format!("{} isn't a positive integer number", &*v))
+    }
