@@ -71,6 +71,9 @@ You have to setup racer with:
 While the style of code is maintained using rustfmt on save of file, you have the
 ability to specify the concrete style rules: https://github.com/rust-lang-nursery/rustfmt/blob/master/Configurations.md
 
+The [Rust Language Server](https://github.com/rust-lang-nursery/rls) looks great
+but is not stable in the moment and missing a working atom plugin.
+
 
 Test
 ---------------------------------------------
