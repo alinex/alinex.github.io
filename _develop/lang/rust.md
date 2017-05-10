@@ -35,7 +35,7 @@ But to get a full blown environment you may also need:
 ``` shell
 rustup component add rust-src
 cargo install rustfmt
-cargo install Racer
+cargo install racer
 cargo install just
 cargo install cargo-check
 rustup override add nightly
@@ -61,7 +61,7 @@ As editor I firstly use Atom with the following additional packages:
 - atom-beautify
 - build-cargo
 - build
-- platformio-ide-panel
+- platformio-ide-terminal
 - dockblockr
 
 You have to setup racer with:
@@ -69,7 +69,10 @@ You have to setup racer with:
 - path to rust src: /home/alex/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/
 
 While the style of code is maintained using rustfmt on save of file, you have the
-ability to specify the concrete style rules: https://github.com/rust-lang-nursery/rustfmt/blob/master/Configurations.md
+ability to specify the concrete style rules:
+[Config rustfmt](https://github.com/rust-lang-nursery/rustfmt/blob/master/Configurations.md)
+
+The `build` plugin is triggered using `F9`.
 
 
 Test
