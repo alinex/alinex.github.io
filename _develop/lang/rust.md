@@ -38,6 +38,7 @@ cargo install rustfmt
 cargo install racer
 cargo install just
 cargo install cargo-check
+cargo install cargo-outdated
 rustup override add nightly
 cargo install clippy
 rustup override remove
@@ -116,7 +117,7 @@ If you want to make the resulting binary smaller you may remove the debug symbol
 with: `strip <binary>`.
 
 
-Build Tool
+Make Tool
 ----------------------------------------------
 [just](https://github.com/casey/just) is abuild tool like make which runs commands
 produces detailed error messages and avoids make's idiosyncrasies to be easy to
@@ -135,9 +136,10 @@ The alinex projects use the following targets:
 - `testlib PATTERN` to test only specific library tests
 - `check` for a faster compile to only check for correctness
 - `build` to check if it can be build
-- `lint` to check code using clippy
+- `lint` to lint code using [clippy](https://github.com/arcnmx/cargo-clippy)
+- `outdated` to check for [outdated crates](https://github.com/kbknapp/cargo-outdated)
 - `showdoc` create and open documentation in browser
-- `doc` unly update documentation
+- `doc` only update documentation
 - `release` make a release file
 - `publish` to finalize current version
 - `nightly` to switch to nightly rust
