@@ -75,6 +75,9 @@ ability to specify the concrete style rules:
 
 The `build` plugin is triggered using `F9`.
 
+The [Rust Language Server](https://github.com/rust-lang-nursery/rls) looks great
+but is not stable in the moment and missing a working atom plugin.
+
 
 Test
 ---------------------------------------------
