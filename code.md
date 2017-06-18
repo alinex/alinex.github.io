@@ -6,7 +6,25 @@ layout: default
 Node.JS
 ------------------------------------------------------------------------------
 
-This modules are written in CoffeeScript but are already compiled to JavaScript
+In a rewrite of the modules, I enhance their functionality, bring them to current
+code style using ES6+ and hand write the documentation files.
+
+<div class="row modules">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <h3>General Documentation</h3>
+    <p><a href="https://alinex.gitbooks.io/nodejs/">NodeJS</a>
+    general information about the new modules</p>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <h3>New Modules</h3>
+    <p><a href="https://alinex.gitbooks.io/validator/">validator</a>
+    validation with sanitize of simple or complex values</p>
+  </div>
+</div>
+
+-----
+
+This older modules are written in CoffeeScript but are already compiled to JavaScript
 in the NPM download package. So no need to worry if you aren't familiar with
 CoffeeScript. All my module name's has alinex as a namespace prefix and often use
 some other alinex modules. But that shouldn't prevent you to use it elsewhere.
