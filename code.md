@@ -17,8 +17,10 @@ code style using ES6+ and hand write the documentation files.
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
     <h3>New Modules</h3>
-    <p><a href="https://alinex.gitbooks.io/validator/">validator</a>
-    validation with sanitize of simple or complex values</p>
+    <p><a href="https://github.com/alinex/node-validator/">Validator</a>
+    validation with sanitize of simple or complex values
+    (<a href="https://alinex.gitbooks.io/validator/">manual</a>)
+    </p>
   </div>
 </div>
 
@@ -52,15 +54,11 @@ the [General docs](http://alinex.github.io/node-alinex/).
     working with table like data</p>
 <p><a href="http://alinex.github.io/node-util/">util</a>
     different smaller helpers for string, array and objects</p>
-<p><a href="http://alinex.github.io/node-validator/">validator</a>
-    validation and sanitize of simple or complex values</p>
 
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
 
 <h3>Base Modules</h3>
-<p><a href="http://alinex.github.io/node-config/">config</a>
-    configuration management</p>
 <p><a href="http://alinex.github.io/node-database/">database</a>
     wrapper module supporting mysql and more</p>
 <p><a href="http://alinex.github.io/node-exec/">exec</a>
