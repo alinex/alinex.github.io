@@ -1,6 +1,7 @@
 admin-client.service.dvb
 - static
 - on any webserver
+- angular
 - auth
 - menu by role
 - axios
