@@ -215,6 +215,12 @@ So the real pages could be shorter:
       }
     </script>
 
+As you have seen I already added a lot other things like validation, error message
+display on demand, autofocus...
+
+![image](../images/Screenshot_20180105_205316.png)
+
+
 # Further steps
 
 My next bigger steps will be to make the REST Server component and make connecting it with the frontend.
