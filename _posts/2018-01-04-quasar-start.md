@@ -218,7 +218,7 @@ So the real pages could be shorter:
 As you have seen I already added a lot other things like validation, error message
 display on demand, autofocus...
 
-![image](../images/Screenshot_20180105_205316.png)
+<img src="/images/Screenshot_20180105_205316.png" class="img-responsive center-block" />
 
 
 # Further steps

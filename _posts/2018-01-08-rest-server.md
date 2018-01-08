@@ -103,7 +103,7 @@ Also user information like cration time and user reference may be added with suc
 
 ## Combining information
 
-Eith an after hook the returned information can be changed such as adding the user information directly to the user reference.
+With an after hook the returned information can be changed such as adding the user information directly to the user reference.
 
 # Further steps
 
