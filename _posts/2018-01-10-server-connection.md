@@ -119,6 +119,22 @@ with its two modules included:
 1. The Service module adds a Vuex store for new services.
 2. The Auth module sets up the Vuex store for authentication / logout.
 
+In _store/index.js_:
+
+    import feathersVuex from 'feathers-vuex'
+    import feathersClient from '../feathers-client'
+
+    const { service, auth } = feathersVuex(feathersClient, { idField: '_id' })
+
+    const store = new Vuex.Store({
+      strict: process.env.NODE_ENV !== 'production',
+      plugins: [
+        service('messages'),
+        auth()
+      ],
+      ...
+    })
+    
 # Further steps
 
 The basic connection is established. My next step will be to integrate some services and authentication through this into the quasar client app to make the example complete.
