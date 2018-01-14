@@ -30,7 +30,8 @@ any other static server. It may also be used ass desktop or mobile-app.
 
 First the server providing the complete data.
 
-### Features
+__Features__
+
 - stateless using simple Java Web Token
 - websocket (Realtime API) or HTTP REST
 - service oriented architecture
@@ -39,9 +40,10 @@ First the server providing the complete data.
 - multiple database support
 - logging events
 
-### Planned
+__Planned__
+
 - authentication logging
-- with asymetric keys for authentication
+- attruíbute based authorization
 - multi core support
 
 ## Technologies
@@ -54,7 +56,8 @@ First the server providing the complete data.
 
 # Client
 
-### Features
+__Features__
+
 - universal app for browser, Android, IOS, Windows, Mac OS and Linux
 - responsive design using FlexBox
 - modern interactive layout with animations, shadow-DOM and data binding
@@ -62,12 +65,14 @@ First the server providing the complete data.
 - client validation
 - component based widgets
 
-## Planned
+__Planned__
+
+- upgrade to upcomming quasar v0.15
 - better design
+- attribute based authorization
 - with test area
   - public test page
   - private test
-- upgrade to upcomming quasar v0.15
 
 ## Technologies
 
@@ -85,20 +90,20 @@ First the server providing the complete data.
 
 This describes the overall functionality:
 
-### Features
+__Features__
+
 - authentication
 - test area (only while developing)
-- chat application
 
-### Planned
+__Planned__
+
 - final layout
-- rights management
-- user administration
-- chat application
+- user administration module
+- chat application module
 
 
 # Further steps
 
-The development will slow down a bit but the next milestone will include the above features described under planned.
+The development will slow down a bit but the next milestone will include the above features described under planned. It will also use a mongo db instance for the first modules.
 
 _Alexander Schilling_
