@@ -16,10 +16,17 @@ code style using ES6+ and hand write the documentation files.
     general information about the new modules</p>
   </div>
   <div class="col-md-4 col-sm-6 col-xs-12">
-    <h3>New Modules</h3>
+    <h3>Modules</h3>
     <p><a href="https://github.com/alinex/node-validator/">Validator</a>
     validation with sanitize of simple or complex values
     (<a href="https://alinex.gitbooks.io/validator/">manual</a>)
+    </p>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <h3>Applications</h3>
+    <p><a href="https://github.com/alinex/node-admin/">Admin Panel</a>
+    administration panel based on REST server and quasar/vue client
+    (<a href="https://alinex.gitbooks.io/administration-panel/content/">manual</a>)
     </p>
   </div>
 </div>
