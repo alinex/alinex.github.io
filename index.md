@@ -9,9 +9,9 @@ layout: title
 
 # Welcome
 
-To my small Alinex universe where I share my private test results and
-developments from development and more. This is also a central place to share
-some of my latest node modules with you.
+This is my old site which will be kept for some time.
+
+But better have a look on my new site under <a href="https://alinex.gitlab.io">alinex.gitlab.io</a> it is completely restructured with different layout and more information.
 
 <p><br /><br /></p>
 
